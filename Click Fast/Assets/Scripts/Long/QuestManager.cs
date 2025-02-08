@@ -24,20 +24,35 @@ public class QuestManager : MonoBehaviour
     [Space]
     [Header("UI")]
     public TextMeshProUGUI question;
-    public TextMeshProUGUI answer1;
+    public List<TextMeshProUGUI> answerList;
+  /*  public TextMeshProUGUI answer1;
     public TextMeshProUGUI answer2;
     public TextMeshProUGUI answer3;
     public TextMeshProUGUI answer4;
+  */
 
     public TextMeshProUGUI timeOutUI;
 
     public void UpdateQuestUI()
     {
         question.text = currentQuestion.question;
-        answer1.text = currentQuestion.answers[0];
-        answer2.text = currentQuestion.answers[1];
-        answer3.text = currentQuestion.answers[2];
-        answer4.text = currentQuestion.answers[3];
+
+        answerList[0].text = currentQuestion.answers[0];
+        answerList[1].text = currentQuestion.answers[1];
+        answerList[2].text = currentQuestion.answers[2];
+        answerList[3].text = currentQuestion.answers[3];
+        for (int i = 0; i < currentQuestion.answers.Length; i++)
+        {
+            if (answerList[i].text == "")
+            {
+                Debug.Log("nulll");
+               answerList[i].transform.parent.gameObject.SetActive(false);
+            } else
+            {
+                Debug.Log("not nulll");
+            }
+        }
+       
     }
 
     private static QuestManager _instance;
@@ -73,6 +88,7 @@ public class QuestManager : MonoBehaviour
     {
         currentQuestion = GetRandomQuestion();
         UpdateQuestUI();
+       
     }
     private void Update()
     {
@@ -83,7 +99,14 @@ public class QuestManager : MonoBehaviour
         // Kiểm tra nếu đã hỏi tất cả các câu hỏi
         if (passIndex.Count >= questions.Count)
         {
-            Debug.Log("Không còn câu hỏi nào nữa!");
+            if (ScreenManager.Instance != null)
+            {
+                ScreenManager.Instance.LoadSceneNext();
+            } else
+            {
+                Debug.Log("nulll rồi con");
+            }
+           
 
             return null; // Không còn câu hỏi nào để hỏi
         }
@@ -123,25 +146,50 @@ public class QuestManager : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
-        if(currentQuestion.correctAnswerIndex == 0 || gameOver)
+        if (gameOver || currentQuestion.correctAnswer == null)
         {
             return;
-        }
+        } 
         selectIndex.Add(index);
-        if (index == currentQuestion.correctAnswerIndex)
-        {
-            Debug.Log("Dung");
-            score += 20;
-            LoadNextQuestion();
+            
+           if( currentQuestion.correctAnswer == chooseAswer(index))
+            {
+                Debug.Log("Dung");
+                score += 20;
+                LoadNextQuestion();
+               
+            } else
+            {
+                Debug.Log("Sai");
+                Debug.Log("Bạn đã thi trượt");
+                gameOver = true;               
+            } 
+    }
 
-        }
-        else
+    string myAnswer;
+    public string chooseAswer(int index)
+    {
+        Debug.Log("chosseIndex " + index);
+    
+        switch(index)
         {
-            Debug.Log("Sai");
-            Debug.Log("Bạn đã thi trượt");
-            gameOver = true ;
+            case 1:
+                myAnswer = answerList[0].text;
+               
+                break;
+            case 2:
+                myAnswer = answerList[1].text;
+                break;
+            case 3:
+                myAnswer = answerList[2].text;
+                break;
+            case 4:
+                myAnswer = answerList[3].text;
+                break;
         }
-       
+        Debug.Log(myAnswer);
+        return myAnswer;
+        
     }
 }
 

@@ -4,5 +4,5 @@ public class Question
 {
     public string question;
     public string[] answers;
-    public int correctAnswerIndex;
+    public string correctAnswer;
 }

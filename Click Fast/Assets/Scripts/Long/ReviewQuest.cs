@@ -31,7 +31,7 @@ public class ReviewQuest : MonoBehaviour
     public void CheckingAnswer()
     {
        
-        if (currentSelectIndex == currentQuestion.correctAnswerIndex)
+        if (true)//currentSelectIndex == currentQuestion.correctAnswerIndex)
         {
             Debug.Log("Dung");
 
