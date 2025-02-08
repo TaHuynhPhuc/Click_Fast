@@ -6,4 +6,9 @@ public class SceneManagers : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
+
+    public void GoToBXH()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("BXH");
+    }
 }
