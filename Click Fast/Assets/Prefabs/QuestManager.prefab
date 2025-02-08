@@ -48,41 +48,43 @@ MonoBehaviour:
   currentQuestion:
     question: 
     answers: []
-    correctAnswerIndex: 0
+    correctAnswer: 
   questions:
   - question: 1+1 = ?
     answers:
+    - 8
+    - 9
     - 2
-    - 3
-    - 4
-    - 5
-    correctAnswerIndex: 1
+    - 
+    correctAnswer: 2
   - question: 1+2= ?
     answers:
     - 2
     - 3
     - 4
     - 5
-    correctAnswerIndex: 2
+    correctAnswer: 3
   - question: 9+2= ?
     answers:
     - 2
     - 13
     - 11
     - 41
-    correctAnswerIndex: 3
+    correctAnswer: 11
   - question: 9+14= ?
     answers:
     - 23
     - 24
     - 15
     - 19
-    correctAnswerIndex: 1
+    correctAnswer: 23
   passIndex: 
+  selectIndex: 
   timeOut: 60
   question: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
-  answer3: {fileID: 0}
-  answer4: {fileID: 0}
+  answerList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   timeOutUI: {fileID: 0}
