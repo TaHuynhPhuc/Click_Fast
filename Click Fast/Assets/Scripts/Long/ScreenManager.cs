@@ -4,8 +4,19 @@ public class ScreenManager : MonoBehaviour
 {
     private static ScreenManager instance;
 
-    public static ScreenManager Instance { get; private set; }
 
+    public static ScreenManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                // Tìm kiếm instance trong scene
+                instance = FindAnyObjectByType<ScreenManager>();
+            }
+            return instance;
+        }
+    }
     private void Awake()
     {
         // Đảm bảo rằng chỉ có một instance tồn tại
