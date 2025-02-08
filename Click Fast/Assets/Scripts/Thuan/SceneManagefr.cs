@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class StartGamePlay : MonoBehaviour
+public class SceneManagefr : MonoBehaviour
 {
+    public string nameScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,5 +13,10 @@ public class StartGamePlay : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void changeScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);
     }
 }
