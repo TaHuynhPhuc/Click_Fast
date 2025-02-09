@@ -13,11 +13,19 @@ public class RankManager1 : MonoBehaviour
 
     void Start()
     {
-        LoadRanking(); // Tải dữ liệu khi game bắt đầu
-        AddPlayer("Tri", 150);
-        AddPlayer("Nam", 200);
-        AddPlayer("Linh", 120);
-        UpdateUI();    // Cập nhật UI hiển thị
+        // PlayerPrefs.DeleteAll(); // ⚠️ Bật dòng này nếu muốn reset bảng xếp hạng
+
+        LoadRanking();
+
+        if (listPlayerRank.Count == 0)
+        {
+            AddPlayer("Tri", 150);
+            AddPlayer("Nam", 200);
+            AddPlayer("Linh", 120);
+            SaveRanking();
+        }
+
+        UpdateUI();
     }
 
     // Thêm người chơi mới vào bảng xếp hạng
@@ -58,19 +66,34 @@ public class RankManager1 : MonoBehaviour
         }
 
         // Hiển thị danh sách mới
-        foreach (var player in listPlayerRank)
+        for (int i = 0; i < listPlayerRank.Count; i++)
         {
+            var player = listPlayerRank[i];  // Lấy người chơi thứ i trong danh sách
             GameObject newEntry = Instantiate(rankEntryPrefab, rankContainer);
 
-            // Lấy component TextMeshProUGUI
-            TextMeshProUGUI textComponent = newEntry.GetComponent<TextMeshProUGUI>();
+            // Lấy component TextMeshProUGUI từ con của Prefab
+            TextMeshProUGUI textComponent = newEntry.GetComponentInChildren<TextMeshProUGUI>();
             if (textComponent == null)
             {
                 Debug.LogError("⚠ rankEntryPrefab không có TextMeshProUGUI Component!");
-                return;
+                continue;
             }
 
-            textComponent.text = $"{player.namePlayer}: {player.scorePlayer} điểm";
+            // Format đẹp hơn + tô màu cho điểm số
+            textComponent.text = $"<b>#{i + 1}</b> {player.namePlayer}: <color=black>{player.scorePlayer} điểm</color>";
+            textComponent.fontSize = 38; // Tăng kích thước chữ
+            textComponent.alignment = TextAlignmentOptions.Center; // Căn giữa text
+
+            
+
+
+            // Thêm khoảng cách giữa các hàng (dùng Layout Element)
+            LayoutElement layout = newEntry.GetComponent<LayoutElement>();
+            if (layout == null)
+            {
+                layout = newEntry.AddComponent<LayoutElement>();
+            }
+            layout.minHeight = 50; // Tăng chiều cao mỗi hàng
         }
 
         Debug.Log("✅ UI Cập nhật thành công!");
@@ -104,4 +127,3 @@ public class RankManager1 : MonoBehaviour
         }
     }
 }
-
