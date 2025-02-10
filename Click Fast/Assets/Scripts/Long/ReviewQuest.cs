@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class ReviewQuest : MonoBehaviour
 {
+
+    public GameObject dataObject;
+    public List<Question> dataQuestions = new List<Question>();
+
     [Space]
     [Header("UI")]
     public TextMeshProUGUI question;
@@ -23,9 +27,10 @@ public class ReviewQuest : MonoBehaviour
 
     private void Start()
     {
-        currentSelectAnswer = QuestManager.Instance.selectAnswer[index];
-        currentPassIndex = QuestManager.Instance.passIndex[index];
-        currentQuestion = QuestManager.Instance.questions[currentPassIndex];
+        dataQuestions = dataObject.GetComponent<DataQuestion>().QuestionList;
+        currentSelectAnswer = QuestController.Instance.selectAnswer[index];
+        currentPassIndex = QuestController.Instance.passIndex[index];
+        currentQuestion = dataQuestions[currentPassIndex];
         CheckingAnswer();
         UpdateQuestUI();
     }
@@ -35,11 +40,11 @@ public class ReviewQuest : MonoBehaviour
     public void OnNextButton()
     {
         index++;
-        if (index > QuestManager.Instance.selectAnswer.Count)
+        if (index > QuestController.Instance.selectAnswer.Count)
         {
-            index = QuestManager.Instance.selectAnswer.Count-1;
+            index = QuestController.Instance.selectAnswer.Count-1;
         }
-        if (index >= QuestManager.Instance.selectAnswer.Count)
+        if (index >= QuestController.Instance.selectAnswer.Count)
         {
             return;
         }
@@ -83,9 +88,9 @@ public class ReviewQuest : MonoBehaviour
 
     public void SetQuestion()
     {
-        currentSelectAnswer = QuestManager.Instance.selectAnswer[index];
-        currentPassIndex = QuestManager.Instance.passIndex[index];
-        currentQuestion = QuestManager.Instance.questions[currentPassIndex];
+        currentSelectAnswer = QuestController.Instance.selectAnswer[index];
+        currentPassIndex = QuestController.Instance.passIndex[index];
+        currentQuestion = dataQuestions[currentPassIndex];
     }
     public void UpdateQuestUI()
     {
