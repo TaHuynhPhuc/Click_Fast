@@ -1142,13 +1142,13 @@ MonoBehaviour:
   currentPassIndex: 0
   currentQuestion:
     questImage: {fileID: 0}
-    question: 1+1 = ?
+    question: 
     answers:
     - 14
     - 523
     - 4
     - 2
-    correctAnswer: 2
+    correctAnswer: 
 --- !u!4 &1520803474
 Transform:
   m_ObjectHideFlags: 0

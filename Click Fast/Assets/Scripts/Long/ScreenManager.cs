@@ -37,20 +37,13 @@ public class ScreenManager : MonoBehaviour
         sceneIndex = SceneManager.loadedSceneCount;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    public void LoadSceneNext()
+    public void LoadLookBackScene()
     {
-        sceneIndex++;
-        SceneManager.LoadScene(sceneIndex); 
+        SceneManager.LoadScene("LookBackQuestion"); 
     }
-    public void LoadSceneBefore()
+    public void LoadEndScene()
     {
-        sceneIndex--;
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene("KetThuc");
     }
 }
