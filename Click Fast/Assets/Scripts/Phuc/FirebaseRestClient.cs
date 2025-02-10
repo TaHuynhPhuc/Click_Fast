@@ -32,36 +32,36 @@ public class FirebaseRestClient : MonoBehaviour
     }
 
     public void CheckAccountExists(string username, System.Action<bool> callback)
-{
-    string url = $"{databaseURL}players/{username}.json";
-    StartCoroutine(CheckAccountCoroutine(url, callback));
-}
-
-private IEnumerator CheckAccountCoroutine(string url, System.Action<bool> callback)
-{
-    UnityWebRequest request = UnityWebRequest.Get(url);
-
-    yield return request.SendWebRequest();
-
-    if (request.result == UnityWebRequest.Result.Success)
     {
-        if (!string.IsNullOrEmpty(request.downloadHandler.text) && request.downloadHandler.text != "null")
+        string url = $"{databaseURL}players/{username}.json";
+        StartCoroutine(CheckAccountCoroutine(url, callback));
+    }
+
+    private IEnumerator CheckAccountCoroutine(string url, System.Action<bool> callback)
+    {
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
         {
-            Debug.Log("Tài khoản đã tồn tại.");
-            callback?.Invoke(true);
+            if (!string.IsNullOrEmpty(request.downloadHandler.text) && request.downloadHandler.text != "null")
+            {
+                Debug.Log("Tài khoản đã tồn tại.");
+                callback?.Invoke(true);
+            }
+            else
+            {
+                Debug.Log("Tài khoản chưa tồn tại.");
+                callback?.Invoke(false);
+            }
         }
         else
         {
-            Debug.Log("Tài khoản chưa tồn tại.");
+            Debug.LogError("Lỗi kiểm tra tài khoản: " + request.error);
             callback?.Invoke(false);
         }
     }
-    else
-    {
-        Debug.LogError("Lỗi kiểm tra tài khoản: " + request.error);
-        callback?.Invoke(false);
-    }
-}
 
     IEnumerator PostData(string url, string jsonData)
     {

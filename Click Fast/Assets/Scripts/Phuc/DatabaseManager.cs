@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DatabaseManager : MonoBehaviour
 {
@@ -35,12 +36,13 @@ public class DatabaseManager : MonoBehaviour
             if (exists)
             {
                 Debug.Log("Tài khoản đã tồn tại.");
-                GetPlayerScore(userName);
+                SceneManager.LoadScene("Start");
             }
             else
             {
                 Debug.Log("Tài khoản đã được tạo.");
                 SavePlayerData(textTenDangNhap.text, textMatKhau.text, 0);
+                SceneManager.LoadScene("Start");
             }
         });
     }
