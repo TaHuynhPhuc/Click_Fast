@@ -115,10 +115,10 @@ public class QuestManager : MonoBehaviour
         {
             if (ScreenManager.Instance != null)
             {
-                ScreenManager.Instance.LoadSceneNext();
+                ScreenManager.Instance.LoadLookBackScene();
             } else
             {
-                Debug.Log("nulll rồi con");
+                Debug.Log("nulll rồi");
             }
             return null; // Không còn câu hỏi nào để hỏi
         }
@@ -142,8 +142,8 @@ public class QuestManager : MonoBehaviour
         if(timeOut <= 0)
         {
             gameOver = true;
-
-            MenuLoss.SetActive(true);
+            ScreenManager.Instance.LoadEndScene();
+            
         }
         timeOutUI.text = Mathf.Round(timeOut).ToSafeString();
     }
@@ -168,23 +168,23 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-                Debug.Log("Dung");
+             //   Debug.Log("Dung");
                 score += 20;
                 LoadNextQuestion();
                
         } else
         {
-                Debug.Log("Sai");
-                Debug.Log("Bạn đã thi trượt");
+               // Debug.Log("Sai");
+               // Debug.Log("Bạn đã thi trượt");
                 gameOver = true;
-                MenuLoss.SetActive(true);
+                ScreenManager.Instance.LoadEndScene();
         } 
     }
 
     string myAnswer;
     public string chooseAswer(int index)
     {
-        Debug.Log("chosseIndex " + index);
+       // Debug.Log("chosseIndex " + index);
     
         switch(index)
         {
