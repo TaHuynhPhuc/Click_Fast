@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+using SimpleJSON;
+using System.Collections.Generic;
+using System;
 
 public class FirebaseRestClient : MonoBehaviour
 {
@@ -36,6 +39,90 @@ public class FirebaseRestClient : MonoBehaviour
         string url = $"{databaseURL}players/{username}.json";
         StartCoroutine(CheckAccountCoroutine(url, callback));
     }
+
+    public void GetAllPlayers(System.Action<List<PlayerData>> callback)
+    {
+        string url = $"{databaseURL}players.json";
+        StartCoroutine(GetAllPlayersData(url, callback));
+    }
+    public void CheckPassword(string username, string passwordToCheck, Action<bool> callback)
+    {
+        string url = $"{databaseURL}players/{username}.json";
+
+        StartCoroutine(CheckPasswordCoroutine(url, passwordToCheck, callback));
+    }
+
+    private IEnumerator CheckPasswordCoroutine(string url, string passwordToCheck, Action<bool> callback)
+    {
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            string jsonData = request.downloadHandler.text;
+
+            if (!string.IsNullOrEmpty(jsonData) && jsonData != "null")
+            {
+                var playerData = JSON.Parse(jsonData);
+                string storedPassword = playerData["password"];
+
+                bool isPasswordCorrect = storedPassword == passwordToCheck;
+                callback(isPasswordCorrect);
+            }
+            else
+            {
+                Debug.LogWarning("Player not found.");
+                callback(false);
+            }
+        }
+        else
+        {
+            Debug.LogError("Request failed: " + request.error);
+            callback(false);
+        }
+    }
+
+    private IEnumerator GetAllPlayersData(string url, System.Action<List<PlayerData>> callback)
+    {
+        UnityWebRequest request = UnityWebRequest.Get(url);
+
+        yield return request.SendWebRequest();
+
+        List<PlayerData> playersList = new List<PlayerData>();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            string jsonData = request.downloadHandler.text;
+            if (!string.IsNullOrEmpty(jsonData) && jsonData != "null")
+            {
+                // Parse JSON using SimpleJSON
+                var jsonObject = JSON.Parse(jsonData);
+
+                foreach (var playerEntry in jsonObject)
+                {
+                    string username = playerEntry.Key;
+                    var playerData = playerEntry.Value;
+
+                    string password = playerData["password"];
+                    int score = playerData["score"].AsInt;
+
+                    playersList.Add(new PlayerData(username, password, score));
+                }
+            }
+            else
+            {
+                Debug.Log("No player data found.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Failed to get player list: " + request.error);
+        }
+
+        callback?.Invoke(playersList);
+    }
+
 
     private IEnumerator CheckAccountCoroutine(string url, System.Action<bool> callback)
     {
