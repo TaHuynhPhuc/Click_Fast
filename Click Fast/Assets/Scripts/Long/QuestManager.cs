@@ -133,7 +133,7 @@ public class QuestManager : MonoBehaviour
             if (ScreenManager.Instance != null)
             {
                 Debug.Log("load lokback");
-               // ScreenManager.Instance.LoadLookBackScene();
+               ScreenManager.Instance.LoadLookBackScene();
             } else
             {
                 Debug.Log("nulll rồi");
@@ -195,14 +195,11 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-             //   Debug.Log("Dung");
                 score += 20;
                 LoadNextQuestion();
                
         } else
         {
-               // Debug.Log("Sai");
-               // Debug.Log("Bạn đã thi trượt");
             //    gameOver = true; 
             QuestController.Instance.passIndex.Clear();
             QuestController.Instance.selectAnswer.Clear();

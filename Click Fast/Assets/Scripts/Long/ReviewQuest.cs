@@ -31,7 +31,6 @@ public class ReviewQuest : MonoBehaviour
         currentSelectAnswer = QuestController.Instance.selectAnswer[index];
         currentPassIndex = QuestController.Instance.passIndex[index];
         currentQuestion = dataQuestions[currentPassIndex];
-        CheckingAnswer();
         UpdateQuestUI();
     }
     
@@ -50,9 +49,9 @@ public class ReviewQuest : MonoBehaviour
         }
         else
         {
-            SetQuestion();
-            CheckingAnswer();
+            SetQuestion();     
             UpdateQuestUI();
+           // CheckingAnswer("", 0);
         }
     }
     public void OnBeforeButton()
@@ -67,22 +66,23 @@ public class ReviewQuest : MonoBehaviour
            return;
         } else
         {
-            SetQuestion();
-            CheckingAnswer();
+            SetQuestion();  
             UpdateQuestUI();
         }
        
     }
-    public void CheckingAnswer()
+    public void CheckingAnswer(string yourAnswer , int i)
     {
        
-        if (currentSelectAnswer == currentQuestion.correctAnswer)
+        if (yourAnswer == currentQuestion.correctAnswer)
         {
             Debug.Log("Dung");
+            answerList[i].color = Color.green;
         }
         else
         {
-            Debug.Log("Sai");     
+            Debug.Log("Sai");
+            answerList[i].color = Color.red;
         }
     }
 
@@ -123,10 +123,12 @@ public class ReviewQuest : MonoBehaviour
         {
             if (answerList[i].text == currentSelectAnswer)
             {
-                answerList[i].color = Color.green;
+                answerList[i].text += " (Your answer)";
+                CheckingAnswer(answerList[i].text, i);
+
             } else
             {
-                answerList[i].color = Color.red;
+                //answerList[i].color = Color.red;
             }
         }
       
