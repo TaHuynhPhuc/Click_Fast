@@ -29,6 +29,11 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ShowTop30Players();
+    }
+
     public void Login()
     {
         string userName = textTenDangNhap.text.Trim();
@@ -62,7 +67,6 @@ public class DatabaseManager : MonoBehaviour
                 }
             });
         }
-        ShowTop30Players();
     }
 
     public void ShowTop30Players()

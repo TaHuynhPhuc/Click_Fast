@@ -120,6 +120,7 @@ public class RankManager1 : MonoBehaviour
     // Load bảng xếp hạng từ PlayerPrefs
     private void LoadRanking()
     {
+        Debug.Log("1");
         //listPlayerRank.Clear();
         /*listPlayerRank.Add(new PlayerRank("tri",100));
         listPlayerRank.Add(new PlayerRank("thuan", 1400));
