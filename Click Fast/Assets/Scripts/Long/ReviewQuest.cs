@@ -10,6 +10,11 @@ public class ReviewQuest : MonoBehaviour
 {
 
     public GameObject dataObject;
+    public Sprite spriteCorrect;
+    public Sprite spriteIncorrect;
+    public Sprite spriteNormal;
+
+
     public List<Question> dataQuestions = new List<Question>();
 
     [Space]
@@ -38,22 +43,21 @@ public class ReviewQuest : MonoBehaviour
 
     public void OnNextButton()
     {
+        Debug.Log(QuestController.Instance.selectAnswer.Count);
         index++;
-        if (index > QuestController.Instance.selectAnswer.Count)
+        if (index > QuestController.Instance.selectAnswer.Count-1)
         {
             index = QuestController.Instance.selectAnswer.Count-1;
         }
-        if (index >= QuestController.Instance.selectAnswer.Count)
-        {
-            return;
-        }
         else
         {
+            ResetUIButton();
             SetQuestion();     
-            UpdateQuestUI();
-           // CheckingAnswer("", 0);
+            UpdateQuestUI();         
         }
     }
+
+
     public void OnBeforeButton()
     {
         index--;
@@ -61,13 +65,11 @@ public class ReviewQuest : MonoBehaviour
         {
             index = 0;
         }
-        if (index < 0 )
+        else
         {
-           return;
-        } else
-        {
+            ResetUIButton();
             SetQuestion();  
-            UpdateQuestUI();
+            UpdateQuestUI(); 
         }
        
     }
@@ -76,16 +78,30 @@ public class ReviewQuest : MonoBehaviour
        
         if (yourAnswer == currentQuestion.correctAnswer)
         {
-            Debug.Log("Dung");
-            answerList[i].color = Color.green;
+            Debug.Log("dung");
+            answerList[i].transform.parent.GetComponent<Image>().sprite = spriteCorrect;
         }
         else
         {
-            Debug.Log("Sai");
-            answerList[i].color = Color.red;
+            Debug.Log("sai");
+            answerList[i].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
+            foreach (var item in answerList)
+            {
+                if(item.text == currentQuestion.correctAnswer)
+                {
+                    item.transform.parent.GetComponent<Image>().sprite = spriteCorrect;
+                }
+            }
         }
     }
-
+    public void ResetUIButton()
+    {
+        foreach(TextMeshProUGUI answer in answerList)
+        {
+            answer.transform.parent.GetComponent<Image>().sprite = spriteNormal;
+        }
+  
+    }
     public void SetQuestion()
     {
         currentSelectAnswer = QuestController.Instance.selectAnswer[index];
@@ -124,7 +140,7 @@ public class ReviewQuest : MonoBehaviour
             if (answerList[i].text == currentSelectAnswer)
             {
                 answerList[i].text += " (Your answer)";
-                CheckingAnswer(answerList[i].text, i);
+                CheckingAnswer(currentSelectAnswer, i);
 
             } else
             {

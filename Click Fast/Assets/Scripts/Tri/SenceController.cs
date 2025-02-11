@@ -29,4 +29,5 @@ public class SceneController : MonoBehaviour
         Debug.Log("Game is quitting...");
         Application.Quit();
     }
+
 }

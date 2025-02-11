@@ -7,11 +7,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;
 using System.Threading;
+using System.Collections;
+using System;
 
 public class QuestManager : MonoBehaviour
 {
-
+    [Header("Tai Nguyen Can Them")]
     public GameObject dataObject;
+    public Sprite spriteCorrect;
+    public Sprite spriteIncorrect;
+    public Sprite spriteNormal;
 
 
     public int score;
@@ -44,7 +49,8 @@ public class QuestManager : MonoBehaviour
 
     public void UpdateQuestUI()
     {
-            question.text = currentQuestion.question;
+        ResetUIButton();
+        question.text = currentQuestion.question;
             questionImage.sprite = currentQuestion.questImage;
             for (int i = 0; i < currentQuestion.answers.Length; i++)
              {
@@ -83,6 +89,8 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
+        QuestController.Instance.passIndex.Clear();
+        QuestController.Instance.selectAnswer.Clear();
         FindTextMPro();
         questions = dataObject.GetComponent<DataQuestion>().QuestionList;
         if (SceneManager.GetActiveScene().name != "GamePlay")
@@ -132,7 +140,7 @@ public class QuestManager : MonoBehaviour
         {
             if (ScreenManager.Instance != null)
             {
-                Debug.Log("load lokback");
+              //  Debug.Log("load lokback");
                ScreenManager.Instance.LoadLookBackScene();
             } else
             {
@@ -144,7 +152,7 @@ public class QuestManager : MonoBehaviour
         int randomIndex;
         do
         {       
-            randomIndex = Random.Range(0, questions.Count);
+            randomIndex =UnityEngine.Random.Range(0, questions.Count);
         } while (QuestController.Instance.passIndex.Contains(randomIndex)); // Tiếp tục cho đến khi tìm thấy câu hỏi chưa hỏi
 
         QuestController.Instance.passIndex.Add(randomIndex); // Thêm chỉ số câu hỏi vào danh sách đã hỏi
@@ -184,6 +192,14 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    public void ResetUIButton()
+    {
+        foreach (TextMeshProUGUI answer in answerList)
+        {
+            answer.transform.parent.GetComponent<Image>().sprite = spriteNormal;
+        }
+
+    }
     public void OnAnswerSelected(int index)
     {
         if (currentQuestion.correctAnswer == null) //gameOver || 
@@ -195,16 +211,31 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-                score += 20;
-                LoadNextQuestion();
+            score += 20;
+            //Debug.Log(index);
+            answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
+            StartCoroutine(delayShowAnswer());
                
         } else
         {
             //    gameOver = true; 
-            QuestController.Instance.passIndex.Clear();
-            QuestController.Instance.selectAnswer.Clear();
-            ScreenManager.Instance.LoadEndScene();
+            answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
+            Debug.Log("sai");
+            StartCoroutine(delayShowFailAnswer());
+  
         } 
+    }
+
+    public IEnumerator delayShowFailAnswer()
+    {
+        yield return new WaitForSeconds(1f);
+        ScreenManager.Instance.LoadEndScene();
+    }
+
+    public  IEnumerator delayShowAnswer()
+    {
+        yield return new WaitForSeconds(1f);
+        LoadNextQuestion();
     }
 
     string myAnswer;
