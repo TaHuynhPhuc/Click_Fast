@@ -78,6 +78,7 @@ public class DatabaseManager : MonoBehaviour
             for (int i = 0; i < top30Players.Count; i++)
             {
                 Debug.Log($"{i + 1}. Username: {top30Players[i].username}, Score: {top30Players[i].score}");
+                playerData.Add(top30Players[i]);
             }
         });
     }
