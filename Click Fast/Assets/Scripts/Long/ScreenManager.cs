@@ -16,6 +16,14 @@ public class ScreenManager : MonoBehaviour
             }
             return instance;
         }
+        set
+        {
+            if (instance == null)
+            {
+                // Tìm kiếm instance trong scene
+             
+            }
+        }
     }
     private void Awake()
     {

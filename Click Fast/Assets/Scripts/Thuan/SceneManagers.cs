@@ -6,6 +6,10 @@ public class SceneManagers : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
+    public void GoToLookBack()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("LookBackQuestion");
+    }
 
     public void GoToBXH()
     {

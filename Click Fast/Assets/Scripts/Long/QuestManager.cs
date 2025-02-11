@@ -6,104 +6,129 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;
+using System.Threading;
+using System.Collections;
+using System;
 
 public class QuestManager : MonoBehaviour
 {
-    
+    [Header("Tai Nguyen Can Them")]
+    public GameObject dataObject;
+    public Sprite spriteCorrect;
+    public Sprite spriteIncorrect;
+    public Sprite spriteNormal;
+
 
     public int score;
     public Question currentQuestion;
     public List<Question> questions = new List<Question>();
 
-    public List<int> passIndex = new List<int>();
-    public List<string> selectAnswer = new List<string>();
+
 
     [Space]
     [Header("Time")]
     [SerializeField]
     private float timeOut;
-    private bool gameOver;
+   // private bool gameOver;
 
     [Space]
     [Header("UI")]
     public TextMeshProUGUI question;
     public Image questionImage;
     public List<TextMeshProUGUI> answerList;
-
-    public GameObject MenuLoss;
-  /*  public TextMeshProUGUI answer1;
-    public TextMeshProUGUI answer2;
-    public TextMeshProUGUI answer3;
-    public TextMeshProUGUI answer4;
-  */
-
     public TextMeshProUGUI timeOutUI;
+
+    // public GameObject MenuLoss;
+    /*  public TextMeshProUGUI answer1;
+      public TextMeshProUGUI answer2;
+      public TextMeshProUGUI answer3;
+      public TextMeshProUGUI answer4;
+    */
+
+  
 
     public void UpdateQuestUI()
     {
-        
+        ResetUIButton();
         question.text = currentQuestion.question;
-        questionImage.sprite = currentQuestion.questImage;
+            questionImage.sprite = currentQuestion.questImage;
+            for (int i = 0; i < currentQuestion.answers.Length; i++)
+             {
+                answerList[i].text = currentQuestion.answers[i];
+             }
+             if(currentQuestion.answers.Length == 3)
+             {
+             answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = false;
+             answerList[3].GetComponent<TextMeshProUGUI>().enabled = false;
+             }
+                 else
+                {
+                     answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = true;
+                     answerList[3].GetComponent<TextMeshProUGUI>().enabled = true;
+                }
 
-        answerList[0].text = currentQuestion.answers[0];
-        answerList[1].text = currentQuestion.answers[1];
-        answerList[2].text = currentQuestion.answers[2];
-        answerList[3].text = currentQuestion.answers[3];
-        for (int i = 0; i < currentQuestion.answers.Length; i++)
-        {
-            if (answerList[i].text == "")
-            {
-            //   Debug.Log("nulll");
-               answerList[i].transform.parent.gameObject.SetActive(false);
-            } else
-            {
-                answerList[i].transform.parent.gameObject.SetActive(true);
-              //  Debug.Log("not nulll");
+        /*
+         for (int i = 0; i < currentQuestion.answers.Length; i++)
+       {
+           if (answerList[i].text == "" || answerList[i] == null)
+           {
+               answerList[i].transform.parent.gameObject.GetComponent<Image>().enabled = false;
+               answerList[i].GetComponent<TextMeshProUGUI>().enabled = false;
+
             }
-        }
-       
+           else
+           {
+               answerList[i].transform.parent.gameObject.GetComponent<Image>().enabled = true;
+               answerList[i].GetComponent<TextMeshProUGUI>().enabled = true;
+           }
+       }
+         */
     }
 
-    private static QuestManager _instance;
 
-    public static QuestManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                // Tìm kiếm instance trong scene
-                _instance = FindAnyObjectByType<QuestManager>();
-            }
-            return _instance;
-        }
-    }
 
-    private void Awake()
-    {
-        // Đảm bảo rằng chỉ có một instance tồn tại
-        if (_instance == null)
-        {
-            _instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-  
     private void Start()
     {
-        if (ScreenManager.Instance.sceneIndex != 1)
+        QuestController.Instance.passIndex.Clear();
+        QuestController.Instance.selectAnswer.Clear();
+        FindTextMPro();
+        questions = dataObject.GetComponent<DataQuestion>().QuestionList;
+        if (SceneManager.GetActiveScene().name != "GamePlay")
         {
             return;
         }
         currentQuestion = GetRandomQuestion();
         UpdateQuestUI();
+        // OnReloadScene();    
+    }
+
+    public void OnReloadScene()
+    {
+        if(SceneManager.GetActiveScene().name == "GamePlay")
+        {
+            currentQuestion = GetRandomQuestion();
+            FindTextMPro();
+            UpdateQuestUI();
+           
+        } else
+        {
+            Debug.Log("Flase");
+        }
        
     }
+
+    public void FindTextMPro() {
+        if (SceneManager.GetActiveScene().name == "GamePlay")
+        {
+            timeOutUI = GameObject.Find("Timmer").GetComponent<TextMeshProUGUI>();
+            question = GameObject.Find("QuestText").GetComponent<TextMeshProUGUI>();
+            questionImage = GameObject.Find("ImageQuest").GetComponent<Image>();
+            answerList[0] = GameObject.Find("Answer1Text").GetComponent<TextMeshProUGUI>();
+            answerList[1] = GameObject.Find("Answer2Text").GetComponent<TextMeshProUGUI>();
+            answerList[2] = GameObject.Find("Answer3Text").GetComponent<TextMeshProUGUI>();
+            answerList[3] = GameObject.Find("Answer4Text").GetComponent<TextMeshProUGUI>();
+        }   
+        }
     private void Update()
     {
         CountDown();
@@ -111,11 +136,12 @@ public class QuestManager : MonoBehaviour
     public Question GetRandomQuestion()
     {
         // Kiểm tra nếu đã hỏi tất cả các câu hỏi
-        if (passIndex.Count >= questions.Count)
+        if (QuestController.Instance.passIndex.Count >= questions.Count)
         {
             if (ScreenManager.Instance != null)
             {
-                ScreenManager.Instance.LoadLookBackScene();
+              //  Debug.Log("load lokback");
+               ScreenManager.Instance.LoadLookBackScene();
             } else
             {
                 Debug.Log("nulll rồi");
@@ -126,10 +152,10 @@ public class QuestManager : MonoBehaviour
         int randomIndex;
         do
         {       
-            randomIndex = Random.Range(0, questions.Count);
-        } while (passIndex.Contains(randomIndex)); // Tiếp tục cho đến khi tìm thấy câu hỏi chưa hỏi
+            randomIndex =UnityEngine.Random.Range(0, questions.Count);
+        } while (QuestController.Instance.passIndex.Contains(randomIndex)); // Tiếp tục cho đến khi tìm thấy câu hỏi chưa hỏi
 
-        passIndex.Add(randomIndex); // Thêm chỉ số câu hỏi vào danh sách đã hỏi
+        QuestController.Instance.passIndex.Add(randomIndex); // Thêm chỉ số câu hỏi vào danh sách đã hỏi
         return questions[randomIndex]; // Trả về câu hỏi ngẫu nhiên chưa hỏi
     }
 
@@ -141,11 +167,20 @@ public class QuestManager : MonoBehaviour
         } 
         if(timeOut <= 0)
         {
-            gameOver = true;
+            //gameOver = true;
+            QuestController.Instance.passIndex.Clear();
+            QuestController.Instance.selectAnswer.Clear();
             ScreenManager.Instance.LoadEndScene();
-            
+
         }
-        timeOutUI.text = Mathf.Round(timeOut).ToSafeString();
+        if(timeOutUI == null)
+        {
+          //FindTextMPro();
+        }else
+        {
+            timeOutUI.text = Mathf.Round(timeOut).ToSafeString();
+        }
+         
     }
 
     public void LoadNextQuestion()
@@ -157,28 +192,50 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    public void ResetUIButton()
+    {
+        foreach (TextMeshProUGUI answer in answerList)
+        {
+            answer.transform.parent.GetComponent<Image>().sprite = spriteNormal;
+        }
+
+    }
     public void OnAnswerSelected(int index)
     {
-        if (gameOver || currentQuestion.correctAnswer == null)
+        if (currentQuestion.correctAnswer == null) //gameOver || 
         {
             return;
-        } 
+        }
 
-        selectAnswer.Add(chooseAswer(index)); 
+        QuestController.Instance.selectAnswer.Add(chooseAswer(index)); 
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-             //   Debug.Log("Dung");
-                score += 20;
-                LoadNextQuestion();
+            score += 20;
+            //Debug.Log(index);
+            answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
+            StartCoroutine(delayShowAnswer());
                
         } else
         {
-               // Debug.Log("Sai");
-               // Debug.Log("Bạn đã thi trượt");
-                gameOver = true;
-                ScreenManager.Instance.LoadEndScene();
+            //    gameOver = true; 
+            answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
+            Debug.Log("sai");
+            StartCoroutine(delayShowFailAnswer());
+  
         } 
+    }
+
+    public IEnumerator delayShowFailAnswer()
+    {
+        yield return new WaitForSeconds(1f);
+        ScreenManager.Instance.LoadEndScene();
+    }
+
+    public  IEnumerator delayShowAnswer()
+    {
+        yield return new WaitForSeconds(1f);
+        LoadNextQuestion();
     }
 
     string myAnswer;
