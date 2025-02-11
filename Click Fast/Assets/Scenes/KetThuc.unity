@@ -690,7 +690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: -751}
+  m_AnchoredPosition: {x: -332, y: -751}
   m_SizeDelta: {x: 300.3521, y: 238.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767076655
@@ -739,7 +739,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 32392620}
         m_TargetAssemblyTypeName: SceneManagers, Assembly-CSharp
-        m_MethodName: GoToGamePlay
+        m_MethodName: GoToLookBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

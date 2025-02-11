@@ -802,7 +802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7805480783188660558, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Name
-      value: Quest UI (1)
+      value: Quest UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1130,6 +1130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0afe1a5505909034bba93d694f12344a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataObject: {fileID: 1998035252930932175, guid: e15e519f4d054424a97ed8a7fb1f21b4, type: 3}
+  spriteCorrect: {fileID: -9096838086184495297, guid: 51aa57e61ae6b5d4d9cd54447cc2fac4, type: 3}
+  spriteIncorrect: {fileID: 5400363610193327989, guid: ff17352c9cde36041a0c031276f6b6a5, type: 3}
+  spriteNormal: {fileID: 0}
+  dataQuestions: []
   question: {fileID: 1160384245}
   questionImage: {fileID: 534736379}
   answerList:
