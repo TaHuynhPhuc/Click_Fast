@@ -29,6 +29,11 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ShowTop30Players();
+    }
+
     public void Login()
     {
         string userName = textTenDangNhap.text.Trim();
@@ -62,7 +67,6 @@ public class DatabaseManager : MonoBehaviour
                 }
             });
         }
-        ShowTop30Players();
     }
 
     public void ShowTop30Players()
@@ -78,6 +82,7 @@ public class DatabaseManager : MonoBehaviour
             for (int i = 0; i < top30Players.Count; i++)
             {
                 Debug.Log($"{i + 1}. Username: {top30Players[i].username}, Score: {top30Players[i].score}");
+                playerData.Add(top30Players[i]);
             }
         });
     }

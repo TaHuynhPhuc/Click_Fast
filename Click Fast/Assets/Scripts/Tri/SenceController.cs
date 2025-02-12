@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
     // Chuyển đến màn chơi chính
     public void LoadGame()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("LookBackQuestion");
     }
 
     // Chuyển đến bảng xếp hạng
@@ -20,7 +20,7 @@ public class SceneController : MonoBehaviour
     // Quay về màn hình chính
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Start");
     }
 
     // Thoát game
