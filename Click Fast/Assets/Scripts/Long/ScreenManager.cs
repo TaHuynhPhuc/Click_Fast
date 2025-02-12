@@ -54,8 +54,5 @@ public class ScreenManager : MonoBehaviour
     {
         SceneManager.LoadScene("KetThuc");
     }
-    public void LoadMainMenu()
-    {
-        SceneManager.LoadScene("Start");
-    }
+   
 }
