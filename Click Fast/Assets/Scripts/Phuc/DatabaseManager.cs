@@ -14,6 +14,7 @@ public class DatabaseManager : MonoBehaviour
     public TextMeshProUGUI textNotification;
 
     public List<PlayerData> playerData = new List<PlayerData>();
+    public string userName;
 
     private void Awake()
     {
@@ -29,14 +30,9 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        ShowTop30Players();
-    }
-
     public void Login()
     {
-        string userName = textTenDangNhap.text.Trim();
+        userName = textTenDangNhap.text.Trim();
         string password = textMatKhau.text.Trim();
         if (userName.Replace("\u200B", "") == "" || password.Replace("\u200B", "") == "")
         {
@@ -69,7 +65,7 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    public void ShowTop30Players()
+    public void LoadTop30Players()
     {
         firebaseClient.GetAllPlayers((players) =>
         {
