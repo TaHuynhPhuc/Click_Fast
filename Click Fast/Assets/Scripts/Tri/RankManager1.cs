@@ -3,13 +3,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+using Unity.VisualScripting;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class RankManager1 : MonoBehaviour
 {
     public GameObject rankEntryPrefab;  // Prefab chứa TextMeshProUGUI
     public Transform rankContainer;     // Vị trí hiển thị bảng xếp hạng
 
-    private List<PlayerRank> listPlayerRank = new List<PlayerRank>();
+
+    public List<PlayerData> listPlayerRank = new List<PlayerData>();
 
     void Start()
     {
@@ -19,9 +22,7 @@ public class RankManager1 : MonoBehaviour
 
         if (listPlayerRank.Count == 0)
         {
-            AddPlayer("Tri", 150);
-            AddPlayer("Nam", 200);
-            AddPlayer("Linh", 120);
+          
             SaveRanking();
         }
 
@@ -31,7 +32,7 @@ public class RankManager1 : MonoBehaviour
     // Thêm người chơi mới vào bảng xếp hạng
     public void AddPlayer(string name, int score)
     {
-        listPlayerRank.Add(new PlayerRank(name, score));
+        //listPlayerRank.Add(new PlayerRank(name, score));
         Debug.Log($"📌 Đã thêm {name} với {score} điểm vào danh sách.");
         SortRank();
         SaveRanking();
@@ -41,7 +42,7 @@ public class RankManager1 : MonoBehaviour
     // Sắp xếp bảng xếp hạng theo điểm số giảm dần
     private void SortRank()
     {
-        listPlayerRank = listPlayerRank.OrderByDescending(p => p.scorePlayer).ToList();
+        listPlayerRank = listPlayerRank.OrderByDescending(p => p.score).ToList();
     }
 
     // Cập nhật UI bảng xếp hạng
@@ -71,20 +72,26 @@ public class RankManager1 : MonoBehaviour
             var player = listPlayerRank[i];  // Lấy người chơi thứ i trong danh sách
             GameObject newEntry = Instantiate(rankEntryPrefab, rankContainer);
 
+            TextMeshProUGUI textComponent1 = newEntry.transform.Find("STT").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI textComponent2 = newEntry.transform.Find("Name").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI textComponent3 = newEntry.transform.Find("Score").GetComponent<TextMeshProUGUI>();
+
             // Lấy component TextMeshProUGUI từ con của Prefab
-            TextMeshProUGUI textComponent = newEntry.GetComponentInChildren<TextMeshProUGUI>();
-            if (textComponent == null)
+            // List<TextMeshProUGUI> textComponent = new List<TextMeshProUGUI>();
+
+            if (textComponent1 == null)
             {
                 Debug.LogError("⚠ rankEntryPrefab không có TextMeshProUGUI Component!");
                 continue;
             }
 
             // Format đẹp hơn + tô màu cho điểm số
-            textComponent.text = $"<b>#{i + 1}</b> {player.namePlayer}: <color=black>{player.scorePlayer} điểm</color>";
-            textComponent.fontSize = 38; // Tăng kích thước chữ
-            textComponent.alignment = TextAlignmentOptions.Center; // Căn giữa text
+            textComponent1.text = $"<b>#{i + 1}</b>";
+            textComponent2.text = player.username;
+            textComponent3.text = player.score.ToString();
+            //    textComponent.fontSize = 38; // Tăng kích thước chữ
+            //    textComponent.alignment = TextAlignmentOptions.Center; // Căn giữa text
 
-            
 
 
             // Thêm khoảng cách giữa các hàng (dùng Layout Element)
@@ -104,8 +111,8 @@ public class RankManager1 : MonoBehaviour
     {
         for (int i = 0; i < listPlayerRank.Count; i++)
         {
-            PlayerPrefs.SetString($"PlayerName_{i}", listPlayerRank[i].namePlayer);
-            PlayerPrefs.SetInt($"PlayerScore_{i}", listPlayerRank[i].scorePlayer);
+            PlayerPrefs.SetString($"PlayerName_{i}", listPlayerRank[i].username);
+            PlayerPrefs.SetInt($"PlayerScore_{i}", listPlayerRank[i].score);
         }
         PlayerPrefs.SetInt("PlayerCount", listPlayerRank.Count);
     }
@@ -113,17 +120,22 @@ public class RankManager1 : MonoBehaviour
     // Load bảng xếp hạng từ PlayerPrefs
     private void LoadRanking()
     {
-        listPlayerRank.Clear();
-        int playerCount = PlayerPrefs.GetInt("PlayerCount", 0);
+        Debug.Log("1");
+        //listPlayerRank.Clear();
+        /*listPlayerRank.Add(new PlayerRank("tri",100));
+        listPlayerRank.Add(new PlayerRank("thuan", 1400));
+        listPlayerRank.Add(new PlayerRank("phuc", -100));*/
+        listPlayerRank = DatabaseManager.Instance.playerData;
+    }
+    public class PlayerRank
+    {
+        public string namePlayer;
+        public int scorePlayer;
 
-        for (int i = 0; i < playerCount; i++)
+        public PlayerRank(string namePlayer, int scorePlayer)
         {
-            string name = PlayerPrefs.GetString($"PlayerName_{i}", "");
-            int score = PlayerPrefs.GetInt($"PlayerScore_{i}", 0);
-            if (!string.IsNullOrEmpty(name))
-            {
-                listPlayerRank.Add(new PlayerRank(name, score));
-            }
+            this.namePlayer = namePlayer;
+            this.scorePlayer = scorePlayer;
         }
     }
 }
