@@ -54,4 +54,5 @@ public class ScreenManager : MonoBehaviour
     {
         SceneManager.LoadScene("KetThuc");
     }
+   
 }
