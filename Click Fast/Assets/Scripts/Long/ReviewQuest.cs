@@ -8,6 +8,15 @@ using UnityEngine.UI;
 
 public class ReviewQuest : MonoBehaviour
 {
+
+    public GameObject dataObject;
+    public Sprite spriteCorrect;
+    public Sprite spriteIncorrect;
+    public Sprite spriteNormal;
+
+
+    public List<Question> dataQuestions = new List<Question>();
+
     [Space]
     [Header("UI")]
     public TextMeshProUGUI question;
@@ -23,10 +32,10 @@ public class ReviewQuest : MonoBehaviour
 
     private void Start()
     {
-        currentSelectAnswer = QuestManager.Instance.selectAnswer[index];
-        currentPassIndex = QuestManager.Instance.passIndex[index];
-        currentQuestion = QuestManager.Instance.questions[currentPassIndex];
-        CheckingAnswer();
+        dataQuestions = dataObject.GetComponent<DataQuestion>().QuestionList;
+        currentSelectAnswer = QuestController.Instance.selectAnswer[index];
+        currentPassIndex = QuestController.Instance.passIndex[index];
+        currentQuestion = dataQuestions[currentPassIndex];
         UpdateQuestUI();
     }
     
@@ -34,22 +43,21 @@ public class ReviewQuest : MonoBehaviour
 
     public void OnNextButton()
     {
+        Debug.Log(QuestController.Instance.selectAnswer.Count);
         index++;
-        if (index > QuestManager.Instance.selectAnswer.Count)
+        if (index > QuestController.Instance.selectAnswer.Count-1)
         {
-            index = QuestManager.Instance.selectAnswer.Count-1;
-        }
-        if (index >= QuestManager.Instance.selectAnswer.Count)
-        {
-            return;
+            index = QuestController.Instance.selectAnswer.Count-1;
         }
         else
         {
-            SetQuestion();
-            CheckingAnswer();
-            UpdateQuestUI();
+            ResetUIButton();
+            SetQuestion();     
+            UpdateQuestUI();         
         }
     }
+
+
     public void OnBeforeButton()
     {
         index--;
@@ -57,35 +65,48 @@ public class ReviewQuest : MonoBehaviour
         {
             index = 0;
         }
-        if (index < 0 )
+        else
         {
-           return;
-        } else
-        {
-            SetQuestion();
-            CheckingAnswer();
-            UpdateQuestUI();
+            ResetUIButton();
+            SetQuestion();  
+            UpdateQuestUI(); 
         }
        
     }
-    public void CheckingAnswer()
+    public void CheckingAnswer(string yourAnswer , int i)
     {
        
-        if (currentSelectAnswer == currentQuestion.correctAnswer)
+        if (yourAnswer == currentQuestion.correctAnswer)
         {
-            Debug.Log("Dung");
+            Debug.Log("dung");
+            answerList[i].transform.parent.GetComponent<Image>().sprite = spriteCorrect;
         }
         else
         {
-            Debug.Log("Sai");     
+            Debug.Log("sai");
+            answerList[i].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
+            foreach (var item in answerList)
+            {
+                if(item.text == currentQuestion.correctAnswer)
+                {
+                    item.transform.parent.GetComponent<Image>().sprite = spriteCorrect;
+                }
+            }
         }
     }
-
+    public void ResetUIButton()
+    {
+        foreach(TextMeshProUGUI answer in answerList)
+        {
+            answer.transform.parent.GetComponent<Image>().sprite = spriteNormal;
+        }
+  
+    }
     public void SetQuestion()
     {
-        currentSelectAnswer = QuestManager.Instance.selectAnswer[index];
-        currentPassIndex = QuestManager.Instance.passIndex[index];
-        currentQuestion = QuestManager.Instance.questions[currentPassIndex];
+        currentSelectAnswer = QuestController.Instance.selectAnswer[index];
+        currentPassIndex = QuestController.Instance.passIndex[index];
+        currentQuestion = dataQuestions[currentPassIndex];
     }
     public void UpdateQuestUI()
     {
@@ -118,10 +139,12 @@ public class ReviewQuest : MonoBehaviour
         {
             if (answerList[i].text == currentSelectAnswer)
             {
-                answerList[i].color = Color.green;
+                answerList[i].text += " (Your answer)";
+                CheckingAnswer(currentSelectAnswer, i);
+
             } else
             {
-                answerList[i].color = Color.red;
+                //answerList[i].color = Color.red;
             }
         }
       

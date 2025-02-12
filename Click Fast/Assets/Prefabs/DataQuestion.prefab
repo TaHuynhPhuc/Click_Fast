@@ -53,6 +53,7 @@ MonoBehaviour:
     - "1. Ph\u1EA7n m\u1EB7t \u0111\u01B0\u1EDDng v\xE0 l\u1EC1 \u0111\u01B0\u1EDDng."
     - "2. Ph\u1EA7n \u0111\u01B0\u1EDDng xe ch\u1EA1y."
     - "3. Ph\u1EA7n \u0111\u01B0\u1EDDng xe c\u01A1 gi\u1EDBi."
+    - 
     correctAnswer: "2. Ph\u1EA7n \u0111\u01B0\u1EDDng xe ch\u1EA1y."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 2: \u201CL\xE0n \u0111\u01B0\u1EDDng\u201D l\xE0 g\xEC?"
@@ -65,6 +66,7 @@ MonoBehaviour:
       c\xF3 b\u1EC1 r\u1ED9ng \u0111\u1EE7 cho xe ch\u1EA1y an to\xE0n."
     - "3. L\xE0 \u0111\u01B0\u1EDDng cho xe \xF4 t\xF4 ch\u1EA1y, d\u1EEBng, \u0111\u1ED7
       an to\xE0n."
+    - 
     correctAnswer: "2. L\xE0 m\u1ED9t ph\u1EA7n c\u1EE7a ph\u1EA7n \u0111\u01B0\u1EDDng
       xe ch\u1EA1y \u0111\u01B0\u1EE3c chia theo chi\u1EC1u d\u1ECDc c\u1EE7a \u0111\u01B0\u1EDDng,
       c\xF3 b\u1EC1 r\u1ED9ng \u0111\u1EE7 cho xe ch\u1EA1y an to\xE0n."
@@ -83,6 +85,7 @@ MonoBehaviour:
       chia m\u1EB7t \u0111\u01B0\u1EDDng th\xE0nh hai chi\u1EC1u xe ch\u1EA1y ri\xEAng
       bi\u1EC7t ho\u1EB7c \u0111\u1EC3 ph\xE2n chia ph\u1EA7n \u0111\u01B0\u1EDDng
       c\u1EE7a xe c\u01A1 gi\u1EDBi v\xE0 xe th\xF4 s\u01A1."
+    - 
     correctAnswer: "3. L\xE0 b\u1ED9 ph\u1EADn c\u1EE7a \u0111\u01B0\u1EDDng \u0111\u1EC3
       ph\xE2n chia m\u1EB7t \u0111\u01B0\u1EDDng th\xE0nh hai chi\u1EC1u xe ch\u1EA1y
       ri\xEAng bi\u1EC7t ho\u1EB7c \u0111\u1EC3 ph\xE2n chia ph\u1EA7n \u0111\u01B0\u1EDDng
@@ -97,6 +100,7 @@ MonoBehaviour:
       lan c\u1EE9ng v\xE0 h\u1ED9 lan m\u1EC1m."
     - "3. D\u1EA3i ph\xE2n c\xE1ch g\u1ED3m gi\xE1 long m\xF4n v\xE0 bi\u1EC3n b\xE1o
       hi\u1EC7u \u0111\u01B0\u1EDDng b\u1ED9."
+    - 
     correctAnswer: "1. D\u1EA3i ph\xE2n c\xE1ch g\u1ED3m lo\u1EA1i c\u1ED1 \u0111\u1ECBnh
       v\xE0 lo\u1EA1i di \u0111\u1ED9ng."
   - questImage: {fileID: 0}
@@ -135,6 +139,8 @@ MonoBehaviour:
       xe m\xF4 t\xF4 hai b\xE1nh; xe m\xF4 t\xF4 ba b\xE1nh, xe g\u1EAFn m\xE1y (k\u1EC3
       c\u1EA3 xe m\xE1y \u0111i\u1EC7n) v\xE0 c\xE1c lo\u1EA1i xe t\u01B0\u01A1ng
       t\u1EF1."
+    - 
+    - 
     correctAnswer: "2. G\u1ED3m \xF4 t\xF4; m\xE1y k\xE9o; r\u01A1 mo\xF3c ho\u1EB7c
       s\u01A1 mi r\u01A1 mo\xF3c \u0111\u01B0\u1EE3c k\xE9o b\u1EDFi xe \xF4 t\xF4,
       m\xE1y k\xE9o; xe m\xF4 t\xF4 hai b\xE1nh; xe m\xF4 t\xF4 ba b\xE1nh, xe g\u1EAFn
@@ -155,6 +161,7 @@ MonoBehaviour:
     - "3. G\u1ED3m xe \xF4 t\xF4, m\xE1y k\xE9o, r\u01A1 mo\xF3c ho\u1EB7c s\u01A1
       mi r\u01A1 mo\xF3c \u0111\u01B0\u1EE3c k\xE9o b\u1EDFi xe \xF4 t\xF4, m\xE1y
       k\xE9o."
+    - 
     correctAnswer: "1. G\u1ED3m xe \u0111\u1EA1p (k\u1EC3 c\u1EA3 xe \u0111\u1EA1p
       m\xE1y, xe \u0111\u1EA1p \u0111i\u1EC7n), xe x\xEDch l\xF4, xe l\u0103n d\xF9ng
       cho ng\u01B0\u1EDDi khuy\u1EBFt t\u1EADt, xe s\xFAc v\u1EADt k\xE9o v\xE0 c\xE1c
@@ -168,6 +175,7 @@ MonoBehaviour:
     - "2. Ph\u01B0\u01A1ng ti\u1EC7n giao th\xF4ng th\xF4 s\u01A1 \u0111\u01B0\u1EDDng
       b\u1ED9 v\xE0 xe m\xE1y chuy\xEAn d\xF9ng."
     - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
+    - 
     correctAnswer: "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 10: \u201CNg\u01B0\u1EDDi tham gia giao th\xF4ng \u0111\u01B0\u1EDDng
@@ -178,6 +186,7 @@ MonoBehaviour:
     - "2. Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n, d\u1EABn d\u1EAFt s\xFAc v\u1EADt;
       ng\u01B0\u1EDDi \u0111i b\u1ED9 tr\xEAn \u0111\u01B0\u1EDDng b\u1ED9. "
     - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
+    - 
     correctAnswer: 3
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 11: \u201CNg\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n
@@ -189,6 +198,7 @@ MonoBehaviour:
     - "2. Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n xe m\xE1y chuy\xEAn d\xF9ng tham
       gia giao th\xF4ng \u0111\u01B0\u1EDDng b\u1ED9."
     - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
+    - 
     correctAnswer: "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 12: Kh\xE1i ni\u1EC7m \u201Cng\u01B0\u1EDDi \u0111i\u1EC1u
@@ -207,6 +217,7 @@ MonoBehaviour:
     - "3. L\xE0 ng\u01B0\u1EDDi tham gia giao th\xF4ng t\u1EA1i n\u01A1i thi c\xF4ng,
       n\u01A1i \xF9n t\u1EAFc giao th\xF4ng, \u1EDF b\u1EBFn ph\xE0, t\u1EA1i c\u1EA7u
       \u0111\u01B0\u1EDDng b\u1ED9 \u0111i chung v\u1EDBi \u0111\u01B0\u1EDDng s\u1EAFt."
+    - 
     correctAnswer: "2. L\xE0 c\u1EA3nh s\xE1t giao th\xF4ng, ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c
       giao nhi\u1EC7m v\u1EE5 h\u01B0\u1EDBng d\u1EABn giao th\xF4ng t\u1EA1i n\u01A1i
       thi c\xF4ng, n\u01A1i \xF9n t\u1EAFc giao th\xF4ng, \u1EDF b\u1EBFn ph\xE0,
@@ -229,6 +240,7 @@ MonoBehaviour:
     - "3. L\xE0 tr\u1EA1ng th\xE1i \u0111\u1EE9ng y\xEAn c\u1EE7a ph\u01B0\u01A1ng
       ti\u1EC7n giao th\xF4ng kh\xF4ng gi\u1EDBi h\u1EA1n th\u1EDDi gian gi\u1EEFa
       02 l\u1EA7n v\u1EADn chuy\u1EC3n h\xE0ng h\xF3a ho\u1EB7c h\xE0nh kh\xE1ch."
+    - 
     correctAnswer: "2. L\xE0 tr\u1EA1ng th\xE1i \u0111\u1EE9ng y\xEAn t\u1EA1m th\u1EDDi
       c\u1EE7a ph\u01B0\u01A1ng ti\u1EC7n giao th\xF4ng trong m\u1ED9t kho\u1EA3ng
       th\u1EDDi gian c\u1EA7n thi\u1EBFt \u0111\u1EE7 \u0111\u1EC3 cho ng\u01B0\u1EDDi
@@ -245,6 +257,8 @@ MonoBehaviour:
       ho\u1EB7c th\u1EF1c hi\u1EC7n c\xF4ng vi\u1EC7c kh\xE1c."
     - "2. L\xE0 tr\u1EA1ng th\xE1i \u0111\u1EE9ng y\xEAn c\u1EE7a ph\u01B0\u01A1ng
       ti\u1EC7n giao th\xF4ng kh\xF4ng gi\u1EDBi h\u1EA1n th\u1EDDi gian."
+    - 
+    - 
     correctAnswer: "2. L\xE0 tr\u1EA1ng th\xE1i \u0111\u1EE9ng y\xEAn c\u1EE7a ph\u01B0\u01A1ng
       ti\u1EC7n giao th\xF4ng kh\xF4ng gi\u1EDBi h\u1EA1n th\u1EDDi gian."
   - questImage: {fileID: 0}
@@ -255,6 +269,7 @@ MonoBehaviour:
       qua l\u1EA1i."
     - "2. \u0110\u01B0\u1EE3c ng\u01B0\u1EDDi d\xE2n \u1EE7ng h\u1ED9."
     - "3. \u0110\u01B0\u1EE3c c\u01A1 quan c\xF3 th\u1EA9m quy\u1EC1n c\u1EA5p ph\xE9p."
+    - 
     correctAnswer: "3. \u0110\u01B0\u1EE3c c\u01A1 quan c\xF3 th\u1EA9m quy\u1EC1n
       c\u1EA5p ph\xE9p."
   - questImage: {fileID: 0}
@@ -267,6 +282,7 @@ MonoBehaviour:
     - "3. Kh\xF4ng b\u1ECB nghi\xEAm c\u1EA5m, n\u1EBFu c\xF3 ch\u1EA5t ma t\xFAy
       \u1EDF m\u1EE9c nh\u1EB9, c\xF3 th\u1EC3 \u0111i\u1EC1u khi\u1EC3n ph\u01B0\u01A1ng
       ti\u1EC7n tham gia giao th\xF4ng."
+    - 
     correctAnswer: "1. B\u1ECB nghi\xEAm c\u1EA5m."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 17: S\u1EED d\u1EE5ng r\u01B0\u1EE3u, bia khi l\xE1i
@@ -277,6 +293,7 @@ MonoBehaviour:
     - "2. B\u1ECB x\u1EED ph\u1EA1t h\xE0nh ch\xEDnh ho\u1EB7c c\xF3 th\u1EC3 b\u1ECB
       x\u1EED l\xFD h\xECnh s\u1EF1 t\xF9y theo m\u1EE9c \u0111\u1ED9 vi ph\u1EA1m."
     - "3. Kh\xF4ng b\u1ECB x\u1EED l\xFD h\xECnh s\u1EF1."
+    - 
     correctAnswer: "2. B\u1ECB x\u1EED ph\u1EA1t h\xE0nh ch\xEDnh ho\u1EB7c c\xF3
       th\u1EC3 b\u1ECB x\u1EED l\xFD h\xECnh s\u1EF1 t\xF9y theo m\u1EE9c \u0111\u1ED9
       vi ph\u1EA1m."
@@ -303,6 +320,7 @@ MonoBehaviour:
     - "1. B\u1ECB nghi\xEAm c\u1EA5m t\xF9y tr\u01B0\u1EDDng h\u1EE3p."
     - "2. Kh\xF4ng b\u1ECB nghi\xEAm c\u1EA5m."
     - "3. B\u1ECB nghi\xEAm c\u1EA5m."
+    - 
     correctAnswer: "1. B\u1ECB nghi\xEAm c\u1EA5m t\xF9y tr\u01B0\u1EDDng h\u1EE3p."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 20: Khi l\xE1i xe trong khu \u0111\xF4 th\u1ECB v\xE0
@@ -315,6 +333,7 @@ MonoBehaviour:
     - "2. T\u1EEB 5 gi\u1EDD s\xE1ng \u0111\u1EBFn 22 gi\u1EDD t\u1ED1i."
     - "3.  T\u1EEB 23 gi\u1EDD \u0111\xEAm \u0111\u1EBFn 5 gi\u1EDD s\xE1ng h\xF4m
       sau. "
+    - 
     correctAnswer: "2. T\u1EEB 5 gi\u1EDD s\xE1ng \u0111\u1EBFn 22 gi\u1EDD t\u1ED1i."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 21: Ng\u01B0\u1EDDi l\xE1i xe s\u1EED d\u1EE5ng \u0111\xE8n
@@ -344,6 +363,7 @@ MonoBehaviour:
       c\xF3 th\u1EA9m quy\u1EC1n."
     - "3. Ph\u1EA3i l\xE0 xe \u0111\u0103ng k\xFD v\xE0 ho\u1EA1t \u0111\u1ED9ng
       t\u1EA1i c\xE1c khu v\u1EF1c c\xF3 \u0111\u1ECBa h\xECnh ph\u1EE9c t\u1EA1p."
+    - 
     correctAnswer: "2. Ph\u1EA3i \u0111\u01B0\u1EE3c ch\u1EA5p thu\u1EADn c\u1EE7a
       c\u01A1 quan c\xF3 th\u1EA9m quy\u1EC1n."
   - questImage: {fileID: 0}
@@ -357,6 +377,7 @@ MonoBehaviour:
     - "1. \u0110\u01B0\u1EE3c ph\xE9p."
     - "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p."
     - "3. T\xF9y t\u1EEBng tr\u01B0\u1EDDng h\u1EE3p"
+    - 
     correctAnswer: "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 24: B\u1EA1n \u0111ang l\xE1i xe ph\xEDa tr\u01B0\u1EDBc
@@ -407,6 +428,7 @@ MonoBehaviour:
     - "1. \u0110\u01B0\u1EE3c ph\xE9p"
     - "2. T\xF9y tr\u01B0\u1EDDng h\u1EE3p"
     - "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
+    - 
     correctAnswer: "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 28: Khi \u0111i\u1EC1u khi\u1EC3n xe m\xF4 t\xF4 hai
@@ -488,6 +510,7 @@ MonoBehaviour:
     - "2. Ch\u1EC9 \u0111\u01B0\u1EE3c th\u1EF1c hi\u1EC7n tr\xEAn \u0111\u01B0\u1EDDng
       v\u1EAFng ph\u01B0\u01A1ng ti\u1EC7n c\xF9ng tham gia giao th\xF4ng. "
     - "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
+    - 
     correctAnswer: "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 34: H\xE0nh vi v\u1EADn chuy\u1EC3n \u0111\u1ED3 v\u1EADt
@@ -500,6 +523,7 @@ MonoBehaviour:
     - "3. Ch\u1EC9 \u0111\u01B0\u1EE3c v\u1EADn chuy\u1EC3n v\u1EADt c\u1ED3ng k\u1EC1nh
       tr\xEAn xe m\xE1y n\u1EBFu kho\u1EA3ng c\xE1ch v\u1EC1 nh\xE0 ng\u1EAFn h\u01A1n
       2 km. "
+    - 
     correctAnswer: "1. Kh\xF4ng \u0111\u01B0\u1EE3c v\u1EADn chuy\u1EC3n. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 35: Ng\u01B0\u1EDDi \u0111\u1EE7 bao nhi\xEAu tu\u1ED5i
@@ -513,6 +537,7 @@ MonoBehaviour:
     - "1. 16 tu\u1ED5i. "
     - "2. 18 tu\u1ED5i. "
     - "3. 17 tu\u1ED5i. "
+    - 
     correctAnswer: "2. 18 tu\u1ED5i. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 36: Ng\u01B0\u1EDDi \u0111\u1EE7 16 tu\u1ED5i \u0111\u01B0\u1EE3c
@@ -534,6 +559,7 @@ MonoBehaviour:
     - "1. Xe m\xF4 t\xF4 c\xF3 dung t\xEDch xi lanh 125 cm3. "
     - "2. Xe m\xF4 t\xF4 c\xF3 dung t\xEDch xi lanh t\u1EEB 175 cm3 tr\u1EDF l\xEAn. "
     - "3. Xe m\xF4 t\xF4 c\xF3 dung t\xEDch xi lanh 100 cm3. "
+    - 
     correctAnswer: "2. Xe m\xF4 t\xF4 c\xF3 dung t\xEDch xi lanh t\u1EEB 175 cm3
       tr\u1EDF l\xEAn. "
   - questImage: {fileID: 0}
@@ -545,6 +571,7 @@ MonoBehaviour:
       d\u01B0\u1EDBi 175 cm3. "
     - "2. Xe m\xF4 t\xF4 ba b\xE1nh d\xF9ng cho ng\u01B0\u1EDDi khuy\u1EBFt t\u1EADt. "
     - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+    - 
     correctAnswer: "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
   - questImage: {fileID: 6516544511043405201, guid: 5004e2c6d9e292145823b59a03942f4f, type: 3}
     question: "C\xE2u h\u1ECFi 39: Bi\u1EC3n b\xE1o hi\u1EC7u c\xF3 d\u1EA1ng h\xECnh
@@ -655,6 +682,8 @@ MonoBehaviour:
     answers:
     - "1. Bi\u1EC3n b\xE1o hi\u1EC7u c\u1ED1 \u0111\u1ECBnh. "
     - "2. B\xE1o hi\u1EC7u t\u1EA1m th\u1EDDi. "
+    - 
+    - 
     correctAnswer: "2. B\xE1o hi\u1EC7u t\u1EA1m th\u1EDDi. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 47: Tr\xEAn \u0111\u01B0\u1EDDng c\xF3 nhi\u1EC1u
@@ -677,7 +706,12 @@ MonoBehaviour:
       c\u1EA7n thi\u1EBFt ph\u1EA3i chuy\u1EC3n l\xE0n \u0111\u01B0\u1EDDng, ng\u01B0\u1EDDi
       l\xE1i xe ph\u1EA3i quan s\xE1t xe ph\xEDa tr\u01B0\u1EDBc \u0111\u1EC3 b\u1EA3o
       \u0111\u1EA3m an to\xE0n. "
-    correctAnswer: 2
+    - 
+    correctAnswer: "2. Ph\u1EA3i cho xe \u0111i trong m\u1ED9t l\xE0n \u0111\u01B0\u1EDDng
+      v\xE0 ch\u1EC9 \u0111\u01B0\u1EE3c chuy\u1EC3n l\xE0n \u0111\u01B0\u1EDDng
+      \u1EDF nh\u1EEFng n\u01A1i cho ph\xE9p; khi chuy\u1EC3n l\xE0n ph\u1EA3i c\xF3
+      t\xEDn hi\u1EC7u b\xE1o tr\u01B0\u1EDBc v\xE0 ph\u1EA3i b\u1EA3o \u0111\u1EA3m
+      an to\xE0n. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 48: Tr\xEAn \u0111\u01B0\u1EDDng m\u1ED9t chi\u1EC1u
       c\xF3 v\u1EA1ch k\u1EBB ph\xE2n l\xE0n \u0111\u01B0\u1EDDng, xe th\xF4 s\u01A1
@@ -693,6 +727,7 @@ MonoBehaviour:
     - "3. Xe th\xF4 s\u01A1 \u0111i tr\xEAn l\xE0n \u0111\u01B0\u1EDDng ph\xF9 h\u1EE3p
       kh\xF4ng g\xE2y c\u1EA3n tr\u1EDF giao th\xF4ng, xe c\u01A1 gi\u1EDBi, xe m\xE1y
       chuy\xEAn d\xF9ng \u0111i tr\xEAn l\xE0n \u0111\u01B0\u1EDDng b\xEAn ph\u1EA3i. "
+    - 
     correctAnswer: "2. Xe th\xF4 s\u01A1 ph\u1EA3i \u0111i tr\xEAn l\xE0n \u0111\u01B0\u1EDDng
       b\xEAn ph\u1EA3i trong c\xF9ng, xe c\u01A1 gi\u1EDBi, xe m\xE1y chuy\xEAn d\xF9ng
       \u0111i tr\xEAn l\xE0n \u0111\u01B0\u1EDDng b\xEAn tr\xE1i. "
@@ -707,7 +742,7 @@ MonoBehaviour:
     - "2. Ch\u1EC9 \u0111\u01B0\u1EE3c b\xE1o hi\u1EC7u b\u1EB1ng c\xF2i. "
     - "3. Ph\u1EA3i b\xE1o hi\u1EC7u b\u1EB1ng c\u1EA3 c\xF2i v\xE0 \u0111\xE8n. "
     - "4. Ch\u1EC9 b\xE1o hi\u1EC7u b\u1EB1ng \u0111\xE8n. "
-    correctAnswer: 4
+    correctAnswer: "4. Ch\u1EC9 b\xE1o hi\u1EC7u b\u1EB1ng \u0111\xE8n. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 50: Khi \u0111i\u1EC1u khi\u1EC3n xe ch\u1EA1y tr\xEAn
       \u0111\u01B0\u1EDDng bi\u1EBFt c\xF3 xe sau xin v\u01B0\u1EE3t n\u1EBFu \u0111\u1EE7
@@ -726,170 +761,369 @@ MonoBehaviour:
       tr\u01B0\u1EDBc ho\u1EB7c thi\u1EBFu \u0111i\u1EC1u ki\u1EC7n an to\xE0n ch\u01B0a
       cho v\u01B0\u1EE3t \u0111\u01B0\u1EE3c ph\u1EA3i ra hi\u1EC7u cho xe sau bi\u1EBFt;
       c\u1EA5m g\xE2y tr\u1EDF ng\u1EA1i cho xe xin v\u01B0\u1EE3t. "
+    - 
     correctAnswer: "2. Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n ph\u01B0\u01A1ng
       ti\u1EC7n ph\xEDa tr\u01B0\u1EDBc ph\u1EA3i gi\u1EA3m t\u1ED1c \u0111\u1ED9,
       \u0111i s\xE1t v\u1EC1 b\xEAn ph\u1EA3i c\u1EE7a ph\u1EA7n \u0111\u01B0\u1EDDng
       xe ch\u1EA1y cho \u0111\u1EBFn khi xe sau \u0111\xE3 v\u01B0\u1EE3t qua, kh\xF4ng
       \u0111\u01B0\u1EE3c g\xE2y tr\u1EDF ng\u1EA1i cho xe sau v\u01B0\u1EE3t. "
   - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    question: "C\xE2u h\u1ECFi 51: Khi mu\u1ED1n chuy\u1EC3n h\u01B0\u1EDBng, ng\u01B0\u1EDDi
+      l\xE1i xe ph\u1EA3i th\u1EF1c hi\u1EC7n nh\u01B0 th\u1EBF n\xE0o \u0111\u1EC3
+      \u0111\u1EA3m b\u1EA3o an to\xE0n giao th\xF4ng?  "
+    answers:
+    - "1. Quan s\xE1t g\u01B0\u01A1ng, ra t\xEDn hi\u1EC7u, quan s\xE1t an to\xE0n
+      v\xE0 chuy\u1EC3n h\u01B0\u1EDBng. "
+    - "2. Quan s\xE1t g\u01B0\u01A1ng, gi\u1EA3m t\u1ED1c \u0111\u1ED9, ra t\xEDn
+      hi\u1EC7u chuy\u1EC3n h\u01B0\u1EDBng, quan s\xE1t an to\xE0n v\xE0 chuy\u1EC3n
+      h\u01B0\u1EDBng. "
+    - "3. Quan s\xE1t g\u01B0\u01A1ng, t\u0103ng t\u1ED1c \u0111\u1ED9, ra t\xEDn
+      hi\u1EC7u v\xE0 chuy\u1EC3n h\u01B0\u1EDBng. "
+    - 
+    correctAnswer: "2. Quan s\xE1t g\u01B0\u01A1ng, gi\u1EA3m t\u1ED1c \u0111\u1ED9,
+      ra t\xEDn hi\u1EC7u chuy\u1EC3n h\u01B0\u1EDBng, quan s\xE1t an to\xE0n v\xE0
+      chuy\u1EC3n h\u01B0\u1EDBng. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 52: Khi tr\xE1nh xe \u0111i ng\u01B0\u1EE3c chi\u1EC1u,
+      c\xE1c xe ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
+    answers:
+    - "1. N\u01A1i \u0111\u01B0\u1EDDng h\u1EB9p ch\u1EC9 \u0111\u1EE7 cho m\u1ED9t
+      xe ch\u1EA1y v\xE0 c\xF3 ch\u1ED7 tr\xE1nh xe th\xEC xe n\xE0o \u1EDF g\u1EA7n
+      ch\u1ED7 tr\xE1nh h\u01A1n ph\u1EA3i v\xE0o v\u1ECB tr\xED tr\xE1nh, nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng cho xe kia \u0111i. "
+    - "2. Xe xu\u1ED1ng d\u1ED1c ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng
+      cho xe \u0111ang l\xEAn d\u1ED1c; xe n\xE0o c\xF3 ch\u01B0\u1EDBng ng\u1EA1i
+      v\u1EADt ph\xEDa tr\u01B0\u1EDBc ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng
+      cho xe kh\xF4ng c\xF3 ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt \u0111i tr\u01B0\u1EDBc. "
+    - "3. Xe l\xEAn d\u1ED1c ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho
+      xe xu\u1ED1ng d\u1ED1c; xe n\xE0o kh\xF4ng c\xF3 ch\u01B0\u1EDBng ng\u1EA1i
+      v\u1EADt \u0111i ph\xEDa tr\u01B0\u1EDBc ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng
+      cho xe c\xF3 ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt \u0111i tr\u01B0\u1EDBc. "
+    - "4. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+    correctAnswer: "4. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 53: B\u1EA1n \u0111ang l\xE1i xe tr\xEAn \u0111\u01B0\u1EDDng
+      h\u1EB9p, xu\u1ED1ng d\u1ED1c v\xE0 g\u1EB7p m\u1ED9t xe \u0111ang \u0111i
+      l\xEAn d\u1ED1c, b\u1EA1n c\u1EA7n l\xE0m g\xEC?  "
+    answers:
+    - "1. Ti\u1EBFp t\u1EE5c \u0111i v\xEC xe l\xEAn d\u1ED1c ph\u1EA3i nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng cho m\xECnh. "
+    - "2. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe l\xEAn d\u1ED1c. "
+    - "3. Ch\u1EC9 nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng khi xe l\xEAn d\u1ED1c nh\xE1y
+      \u0111\xE8n. "
+    - 
+    correctAnswer: "2. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe l\xEAn d\u1ED1c. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 54: T\u1EA1i n\u01A1i \u0111\u01B0\u1EDDng giao nhau,
+      ng\u01B0\u1EDDi l\xE1i xe \u0111ang \u0111i tr\xEAn \u0111\u01B0\u1EDDng kh\xF4ng
+      \u01B0u ti\xEAn ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
+    answers:
+    - "1. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i \u1EDF b\xEAn ph\u1EA3i
+      m\xECnh t\u1EDBi. "
+    - "2. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i \u1EDF b\xEAn tr\xE1i
+      m\xECnh t\u1EDBi. "
+    - "3. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i tr\xEAn \u0111\u01B0\u1EDDng
+      \u01B0u ti\xEAn ho\u1EB7c \u0111\u01B0\u1EDDng ch\xEDnh t\u1EEB b\u1EA5t k\u1EF3
+      h\u01B0\u1EDBng n\xE0o t\u1EDBi. "
+    - 
+    correctAnswer: "3. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i tr\xEAn
+      \u0111\u01B0\u1EDDng \u01B0u ti\xEAn ho\u1EB7c \u0111\u01B0\u1EDDng ch\xEDnh
+      t\u1EEB b\u1EA5t k\u1EF3 h\u01B0\u1EDBng n\xE0o t\u1EDBi. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 55: T\u1EA1i n\u01A1i \u0111\u01B0\u1EDDng giao nhau
+      kh\xF4ng c\xF3 b\xE1o hi\u1EC7u \u0111i theo v\xF2ng xuy\u1EBFn, ng\u01B0\u1EDDi
+      \u0111i\u1EC1u khi\u1EC3n ph\u01B0\u01A1ng ti\u1EC7n ph\u1EA3i nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc
+      giao th\xF4ng?  "
+    answers:
+    - "1. Ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i \u0111\u1EBFn
+      t\u1EEB b\xEAn ph\u1EA3i. "
+    - "2. Xe b\xE1o hi\u1EC7u xin \u0111\u01B0\u1EDDng tr\u01B0\u1EDBc xe \u0111\xF3
+      \u0111\u01B0\u1EE3c \u0111i tr\u01B0\u1EDBc. "
+    - "3. Ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i \u0111\u1EBFn
+      t\u1EEB b\xEAn tr\xE1i. "
+    - 
+    correctAnswer: "1. Ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i
+      \u0111\u1EBFn t\u1EEB b\xEAn ph\u1EA3i. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 56: T\u1EA1i n\u01A1i \u0111\u01B0\u1EDDng b\u1ED9
+      giao nhau c\xF9ng m\u1EE9c v\u1EDBi \u0111\u01B0\u1EDDng s\u1EAFt ch\u1EC9
+      c\xF3 \u0111\xE8n t\xEDn hi\u1EC7u ho\u1EB7c chu\xF4ng b\xE1o hi\u1EC7u, khi
+      \u0111\xE8n t\xEDn hi\u1EC7u m\xE0u \u0111\u1ECF \u0111\xE3 b\u1EADt s\xE1ng
+      ho\u1EB7c c\xF3 ti\u1EBFng chu\xF4ng b\xE1o hi\u1EC7u, ng\u01B0\u1EDDi tham
+      gia giao th\xF4ng ph\u1EA3i d\u1EEBng l\u1EA1i ngay v\xE0 gi\u1EEF kho\u1EA3ng
+      c\xE1ch t\u1ED1i thi\u1EC3u bao nhi\xEAu m\xE9t t\xEDnh t\u1EEB ray g\u1EA7n
+      nh\u1EA5t?  "
+    answers:
+    - "1. 5 m\xE9t. "
+    - "2. 3 m\xE9t. "
+    - "3. 4 m\xE9t. "
+    - 
+    correctAnswer: "1. 5 m\xE9t. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 57: Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n ph\u01B0\u01A1ng
+      ti\u1EC7n tham gia giao th\xF4ng trong h\u1EA7m \u0111\u01B0\u1EDDng b\u1ED9
+      ngo\xE0i vi\u1EC7c ph\u1EA3i tu\xE2n th\u1EE7 c\xE1c quy t\u1EAFc giao th\xF4ng
+      c\xF2n ph\u1EA3i th\u1EF1c hi\u1EC7n nh\u1EEFng quy \u0111\u1ECBnh n\xE0o d\u01B0\u1EDBi
+      \u0111\xE2y?  "
+    answers:
+    - "1. Xe c\u01A1 gi\u1EDBi, xe m\xE1y chuy\xEAn d\xF9ng ph\u1EA3i b\u1EADt \u0111\xE8n;
+      xe th\xF4 s\u01A1 ph\u1EA3i b\u1EADt \u0111\xE8n ho\u1EB7c c\xF3 v\u1EADt ph\xE1t
+      s\xE1ng b\xE1o hi\u1EC7u; ch\u1EC9 \u0111\u01B0\u1EE3c d\xF9ng xe, \u0111\u1ED7
+      xe \u1EDF n\u01A1i quy \u0111\u1ECBnh. "
+    - "2. Xe c\u01A1 gi\u1EDBi ph\u1EA3i b\u1EADt \u0111\xE8n ngay c\u1EA3 khi \u0111\u01B0\u1EDDng
+      h\u1EA7m s\xE1ng; ph\u1EA3i cho xe ch\u1EA1y tr\xEAn m\u1ED9t l\xE0n \u0111\u01B0\u1EDDng
+      v\xE0 ch\u1EC9 chuy\u1EC3n l\xE0n \u1EDF n\u01A1i \u0111\u01B0\u1EE3c ph\xE9p;
+      \u0111\u01B0\u1EE3c quay \u0111\u1EA7u xe, l\xF9i xe khi c\u1EA7n thi\u1EBFt. "
+    - "3. Xe m\xE1y chuy\xEAn d\xF9ng ph\u1EA3i b\u1EADt \u0111\xE8n ngay c\u1EA3
+      khi \u0111\u01B0\u1EDDng h\u1EA7m s\xE1ng; ph\u1EA3i cho xe ch\u1EA1y tr\xEAn
+      m\u1ED9t l\xE0n \u0111\u01B0\u1EDDng v\xE0 ch\u1EC9 chuy\u1EC3n l\xE0n \u1EDF
+      n\u01A1i \u0111\u01B0\u1EE3c ph\xE9p; \u0111\u01B0\u1EE3c quay \u0111\u1EA7u
+      xe, l\xF9i xe khi c\u1EA7n thi\u1EBFt. "
+    - 
+    correctAnswer: "1. Xe c\u01A1 gi\u1EDBi, xe m\xE1y chuy\xEAn d\xF9ng ph\u1EA3i
+      b\u1EADt \u0111\xE8n; xe th\xF4 s\u01A1 ph\u1EA3i b\u1EADt \u0111\xE8n ho\u1EB7c
+      c\xF3 v\u1EADt ph\xE1t s\xE1ng b\xE1o hi\u1EC7u; ch\u1EC9 \u0111\u01B0\u1EE3c
+      d\xF9ng xe, \u0111\u1ED7 xe \u1EDF n\u01A1i quy \u0111\u1ECBnh. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 58: Ng\u01B0\u1EDDi ng\u1ED3i tr\xEAn xe m\xF4 t\xF4
+      2 b\xE1nh, xe g\u1EAFn m\xE1y ph\u1EA3i \u0111\u1ED9i m\u0169 b\u1EA3o hi\u1EC3m
+      c\xF3 c\xE0i quai \u0111\xFAng quy c\xE1ch khi n\xE0o?  "
+    answers:
+    - "1. Khi tham gia giao th\xF4ng \u0111\u01B0\u1EDDng b\u1ED9. "
+    - "2. Ch\u1EC9 khi \u0111i tr\xEAn \u0111\u01B0\u1EDDng chuy\xEAn d\xF9ng; \u0111\u01B0\u1EDDng
+      cao t\u1ED1c. "
+    - "3. Khi tham gia giao th\xF4ng tr\xEAn \u0111\u01B0\u1EDDng t\u1EC9nh l\u1ED9
+      ho\u1EB7c qu\u1ED1c l\u1ED9. "
+    - 
+    correctAnswer: "1. Khi tham gia giao th\xF4ng \u0111\u01B0\u1EDDng b\u1ED9. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 59: Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n xe m\xF4
+      t\xF4 hai b\xE1nh, xe g\u1EAFn m\xE1y \u0111\u01B0\u1EE3c ph\xE9p ch\u1EDF
+      t\u1ED1i \u0111a 2 ng\u01B0\u1EDDi trong nh\u1EEFng tr\u01B0\u1EDDng h\u1EE3p
+      n\xE0o?  "
+    answers:
+    - "1. Ch\u1EDF ng\u01B0\u1EDDi b\u1EC7nh \u0111i c\u1EA5p c\u1EE9u; tr\u1EBB
+      em d\u01B0\u1EDBi 14 tu\u1ED5i. "
+    - "2. \xC1p gi\u1EA3i ng\u01B0\u1EDDi c\xF3 h\xE0nh vi vi ph\u1EA1m ph\xE1p lu\u1EADt. "
+    - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+    - 
+    correctAnswer: "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 60: Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n xe m\xF4
+      t\xF4 hai b\xE1nh, xe g\u1EAFn m\xE1y kh\xF4ng \u0111\u01B0\u1EE3c th\u1EF1c
+      hi\u1EC7n nh\u1EEFng h\xE0nh vi n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
+    answers:
+    - "1. \u0110i v\xE0o ph\u1EA7n \u0111\u01B0\u1EDDng d\xE0nh cho ng\u01B0\u1EDDi
+      \u0111i b\u1ED9 v\xE0 ph\u01B0\u01A1ng ti\u1EC7n kh\xE1c; s\u1EED d\u1EE5ng
+      \xF4, \u0111i\u1EC7n tho\u1EA1i di \u0111\u1ED9ng, thi\u1EBFt b\u1ECB \xE2m
+      thanh (tr\u1EEB thi\u1EBFt b\u1ECB tr\u1EE3 th\xEDnh), \u0111i xe d\xE0n h\xE0ng
+      ngang. "
+    - "2. Ch\u1EDF 02 ng\u01B0\u1EDDi; trong \u0111\xF3, c\xF3 ng\u01B0\u1EDDi b\u1ECB
+      b\u1EC7nh \u0111i c\u1EA5p c\u1EE9u ho\u1EB7c tr\u1EBB em d\u01B0\u1EDBi 14
+      tu\u1ED5i ho\u1EB7c \xE1p gi\u1EA3i ng\u01B0\u1EDDi c\xF3 h\xE0nh vi vi ph\u1EA1m
+      ph\xE1p lu\u1EADt. "
+    - "3. \u0110i\u1EC1u khi\u1EC3n ph\u01B0\u01A1ng ti\u1EC7n tham gia giao th\xF4ng
+      tr\xEAn \u0111\u01B0\u1EDDng t\u1EC9nh l\u1ED9 ho\u1EB7c qu\u1ED1c l\u1ED9. "
+    - 
+    correctAnswer: "1. \u0110i v\xE0o ph\u1EA7n \u0111\u01B0\u1EDDng d\xE0nh cho
+      ng\u01B0\u1EDDi \u0111i b\u1ED9 v\xE0 ph\u01B0\u01A1ng ti\u1EC7n kh\xE1c; s\u1EED
+      d\u1EE5ng \xF4, \u0111i\u1EC7n tho\u1EA1i di \u0111\u1ED9ng, thi\u1EBFt b\u1ECB
+      \xE2m thanh (tr\u1EEB thi\u1EBFt b\u1ECB tr\u1EE3 th\xEDnh), \u0111i xe d\xE0n
+      h\xE0ng ngang. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 61: Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n xe m\xF4
+      t\xF4 hai b\xE1nh, xe g\u1EAFn m\xE1y c\xF3 \u0111\u01B0\u1EE3c \u0111i xe
+      d\xE0n h\xE0ng ngang; xe \u0111i v\xE0o ph\u1EA7n \u0111\u01B0\u1EDDng d\xE0nh
+      cho ng\u01B0\u1EDDi \u0111i b\u1ED9 v\xE0 ph\u01B0\u01A1ng ti\u1EC7n kh\xE1c;
+      s\u1EED d\u1EE5ng \xF4, \u0111i\u1EC7n tho\u1EA1i di \u0111\u1ED9ng, thi\u1EBFt
+      b\u1ECB \xE2m thanh (tr\u1EEB thi\u1EBFt b\u1ECB tr\u1EE3 th\xEDnh) hay kh\xF4ng?  "
+    answers:
+    - "1. \u0110\u01B0\u1EE3c ph\xE9p nh\u01B0ng ph\u1EA3i \u0111\u1EA3m b\u1EA3o
+      an to\xE0n. "
+    - "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
+    - "3. \u0110\u01B0\u1EE3c ph\xE9p t\xF9y t\u1EEBng ho\xE0n c\u1EA3nh, \u0111i\u1EC1u
+      ki\u1EC7n c\u1EE5 th\u1EC3. "
+    - 
+    correctAnswer: "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 62: Ng\u01B0\u1EDDi l\xE1i xe ph\u1EA3i gi\u1EA3m
+      t\u1ED1c \u0111\u1ED9 th\u1EA5p h\u01A1n t\u1ED1c \u0111\u1ED9 t\u1ED1i \u0111a
+      cho ph\xE9p (c\xF3 th\u1EC3 d\u1EEBng l\u1EA1i m\u1ED9t c\xE1ch an to\xE0n)
+      trong tr\u01B0\u1EDDng h\u1EE3p n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
+    answers:
+    - "1. Khi c\xF3 b\xE1o hi\u1EC7u c\u1EA3nh b\xE1o nguy hi\u1EC3m ho\u1EB7c c\xF3
+      ch\u01B0\u1EDBng ng\u1EA1i v\u1EADt tr\xEAn \u0111\u01B0\u1EDDng; khi chuy\u1EC3n
+      h\u01B0\u1EDBng xe ch\u1EA1y ho\u1EB7c t\u1EA7m nh\xECn b\u1ECB h\u1EA1n ch\u1EBF;
+      khi qua n\u01A1i \u0111\u01B0\u1EDDng giao nhau, n\u01A1i \u0111\u01B0\u1EDDng
+      b\u1ED9 giao nhau v\u1EDBi \u0111\u01B0\u1EDDng s\u1EAFt; \u0111\u01B0\u1EDDng
+      v\xF2ng; \u0111\u01B0\u1EDDng c\xF3 \u0111\u1ECBa h\xECnh quanh co, \u0111\xE8o
+      d\u1ED1c. "
+    - "2. Khi qua c\u1EA7u, c\u1ED1ng h\u1EB9p; khi l\xEAn g\u1EA7n \u0111\u1EC9nh
+      d\u1ED1c, khi xu\u1ED1ng d\u1ED1c, khi qua tr\u01B0\u1EDDng h\u1ECDc, khu \u0111\xF4ng
+      d\xE2n c\u01B0, khu v\u1EF1c \u0111ang thi c\xF4ng tr\xEAn \u0111\u01B0\u1EDDng
+      b\u1ED9; hi\u1EC7n tr\u01B0\u1EDDng x\u1EA3y ra tai n\u1EA1n giao th\xF4ng. "
+    - "3. Khi \u0111i\u1EC1u khi\u1EC3n xe v\u01B0\u1EE3t xe kh\xE1c tr\xEAn \u0111\u01B0\u1EDDng
+      qu\u1ED1c l\u1ED9, \u0111\u01B0\u1EDDng cao t\u1ED1c. "
+    - "4. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+    correctAnswer: "4. C\u1EA3 \xFD 1 v\xE0 \xFD 2. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 63: T\u1EA1i ng\xE3 ba ho\u1EB7c ng\xE3 t\u01B0 kh\xF4ng
+      c\xF3 \u0111\u1EA3o an to\xE0n, ng\u01B0\u1EDDi l\xE1i xe ph\u1EA3i nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng trong c\xE1c
+      tr\u01B0\u1EDDng h\u1EE3p d\u01B0\u1EDBi \u0111\xE2y?  "
+    answers:
+    - "1. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho ng\u01B0\u1EDDi \u0111i b\u1ED9
+      \u0111ang \u0111i tr\xEAn ph\u1EA7n \u0111\u01B0\u1EDDng d\xE0nh cho ng\u01B0\u1EDDi
+      \u0111i b\u1ED9 sang \u0111\u01B0\u1EDDng; nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng
+      cho xe \u0111i tr\xEAn \u0111\u01B0\u1EDDng \u01B0u ti\xEAn, \u0111\u01B0\u1EDDng
+      ch\xEDnh t\u1EEB b\u1EA5t k\u1EF3 h\u01B0\u1EDBng n\xE0o t\u1EDBi; nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng cho xe \u01B0u ti\xEAn, xe \u0111i t\u1EEB b\xEAn ph\u1EA3i
+      \u0111\u1EBFn. "
+    - "2. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho ng\u01B0\u1EDDi \u0111i b\u1ED9
+      \u0111ang \u0111\u1EE9ng ch\u1EDD \u0111i qua ph\u1EA7n \u0111\u01B0\u1EDDng
+      d\xE0nh cho ng\u01B0\u1EDDi \u0111i b\u1ED9 sang \u0111\u01B0\u1EDDng; nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng cho xe \u0111i tr\xEAn \u0111\u01B0\u1EDDng ng\u01B0\u1EE3c
+      chi\u1EC1u, \u0111\u01B0\u1EDDng nh\xE1nh t\u1EEB b\u1EA5t k\u1EF3 h\u01B0\u1EDBng
+      n\xE0o t\u1EDBi; nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u0111i t\u1EEB
+      b\xEAn tr\xE1i \u0111\u1EBFn. "
+    - "3. Kh\xF4ng ph\u1EA3i nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng. "
+    - 
+    correctAnswer: "1. Nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho ng\u01B0\u1EDDi
+      \u0111i b\u1ED9 \u0111ang \u0111i tr\xEAn ph\u1EA7n \u0111\u01B0\u1EDDng d\xE0nh
+      cho ng\u01B0\u1EDDi \u0111i b\u1ED9 sang \u0111\u01B0\u1EDDng; nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng cho xe \u0111i tr\xEAn \u0111\u01B0\u1EDDng \u01B0u ti\xEAn,
+      \u0111\u01B0\u1EDDng ch\xEDnh t\u1EEB b\u1EA5t k\u1EF3 h\u01B0\u1EDBng n\xE0o
+      t\u1EDBi; nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng cho xe \u01B0u ti\xEAn, xe
+      \u0111i t\u1EEB b\xEAn ph\u1EA3i \u0111\u1EBFn. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 64: Khi \u0111i\u1EC1u khi\u1EC3n xe c\u01A1 gi\u1EDBi,
+      ng\u01B0\u1EDDi l\xE1i xe ph\u1EA3i b\u1EADt \u0111\xE8n t\xEDn hi\u1EC7u b\xE1o
+      r\u1EBD trong tr\u01B0\u1EDDng h\u1EE3p n\xE0o sau \u0111\xE2y?  "
+    answers:
+    - "1. Khi cho xe ch\u1EA1y th\u1EB3ng. "
+    - "2. Tr\u01B0\u1EDBc khi thay \u0111\u1ED5i l\xE0n \u0111\u01B0\u1EDDng. "
+    - "3. Sau khi thay \u0111\u1ED5i l\xE0n \u0111\u01B0\u1EDDng. "
+    - 
+    correctAnswer: "2. Tr\u01B0\u1EDBc khi thay \u0111\u1ED5i l\xE0n \u0111\u01B0\u1EDDng. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 65: Tr\xEAn \u0111o\u1EA1n \u0111\u01B0\u1EDDng hai
+      chi\u1EC1u kh\xF4ng c\xF3 gi\u1EA3i ph\xE2n c\xE1ch gi\u1EEFa, ng\u01B0\u1EDDi
+      l\xE1i xe kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t xe kh\xE1c trong c\xE1c
+      tr\u01B0\u1EDDng h\u1EE3p n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
+    answers:
+    - "1. Xe b\u1ECB v\u01B0\u1EE3t b\u1EA5t ng\u1EDD t\u0103ng t\u1ED1c \u0111\u1ED9
+      v\xE0 c\u1ED1 t\xECnh kh\xF4ng nh\u01B0\u1EDDng \u0111\u01B0\u1EDDng. "
+    - "2. Xe b\u1ECB v\u01B0\u1EE3t gi\u1EA3m t\u1ED1c \u0111\u1ED9 v\xE0 nh\u01B0\u1EDDng
+      \u0111\u01B0\u1EDDng. "
+    - "3. Ph\xE1t hi\u1EC7n c\xF3 xe \u0111i ng\u01B0\u1EE3c chi\u1EC1u. "
+    - "4. C\u1EA3 \xFD 1 v\xE0 \xFD 3. "
+    correctAnswer: "4. C\u1EA3 \xFD 1 v\xE0 \xFD 3. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 66: Ng\u01B0\u1EDDi l\xE1i xe m\xF4 t\xF4 x\u1EED
+      l\xFD nh\u01B0 th\u1EBF n\xE0o khi cho xe m\xF4 t\xF4 ph\xEDa sau v\u01B0\u1EE3t?  "
+    answers:
+    - "1. N\u1EBFu \u0111\u1EE7 \u0111i\u1EC1u ki\u1EC7n an to\xE0n, ng\u01B0\u1EDDi
+      l\xE1i xe ph\u1EA3i gi\u1EA3m t\u1ED1c \u0111\u1ED9, \u0111i s\xE1t v\u1EC1
+      b\xEAn ph\u1EA3i c\u1EE7a ph\u1EA7n \u0111\u01B0\u1EDDng xe ch\u1EA1y cho \u0111\u1EBFn
+      khi xe sau \u0111\xE3 v\u01B0\u1EE3t qua, kh\xF4ng \u0111\u01B0\u1EE3c g\xE2y
+      tr\u1EDF ng\u1EA1i \u0111\u1ED1i v\u1EDBi xe xin v\u01B0\u1EE3t. "
+    - "2. L\xE1i xe v\xE0o l\u1EC1 \u0111\u01B0\u1EDDng b\xEAn tr\xE1i v\xE0 gi\u1EA3m
+      t\u1ED1c \u0111\u1ED9 \u0111\u1EC3 xe ph\xEDa sau v\u01B0\u1EE3t qua, kh\xF4ng
+      \u0111\u01B0\u1EE3c g\xE2y tr\u1EDF ng\u1EA1i \u0111\u1ED1i v\u1EDBi xe xin
+      v\u01B0\u1EE3t. "
+    - "3. N\u1EBFu \u0111\u1EE7 \u0111i\u1EC1u ki\u1EC7n an to\xE0n, ng\u01B0\u1EDDi
+      l\xE1i xe ph\u1EA3i t\u0103ng t\u1ED1c \u0111\u1ED9, \u0111i s\xE1t v\u1EC1
+      b\xEAn ph\u1EA3i c\u1EE7a ph\u1EA7n \u0111\u01B0\u1EDDng ch\u1EA1y cho \u0111\u1EBFn
+      khi xe sau v\u01B0\u1EE3t qua. "
+    - 
+    correctAnswer: "1. N\u1EBFu \u0111\u1EE7 \u0111i\u1EC1u ki\u1EC7n an to\xE0n,
+      ng\u01B0\u1EDDi l\xE1i xe ph\u1EA3i gi\u1EA3m t\u1ED1c \u0111\u1ED9, \u0111i
+      s\xE1t v\u1EC1 b\xEAn ph\u1EA3i c\u1EE7a ph\u1EA7n \u0111\u01B0\u1EDDng xe
+      ch\u1EA1y cho \u0111\u1EBFn khi xe sau \u0111\xE3 v\u01B0\u1EE3t qua, kh\xF4ng
+      \u0111\u01B0\u1EE3c g\xE2y tr\u1EDF ng\u1EA1i \u0111\u1ED1i v\u1EDBi xe xin
+      v\u01B0\u1EE3t. "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 67: Trong c\xE1c tr\u01B0\u1EDDng h\u1EE3p d\u01B0\u1EDBi
+      \u0111\xE2y, \u0111\u1EC3 b\u1EA3o \u0111\u1EA3m an to\xE0n khi tham gia giao
+      th\xF4ng, ng\u01B0\u1EDDi l\xE1i xe m\xF4 t\xF4 c\u1EA7n th\u1EF1c hi\u1EC7n
+      nh\u01B0 th\u1EBF n\xE0o?  "
+    answers:
+    - "1. Ph\u1EA3i \u0111\u1ED9i m\u0169 b\u1EA3o hi\u1EC3m \u0111\u1EA1t chu\u1EA9n,
+      c\xF3 c\xE0i quai \u0111\xFAng quy c\xE1ch, m\u1EB7c qu\u1EA7n \xE1o g\u1ECDn
+      g\xE0ng; kh\xF4ng s\u1EED d\u1EE5ng \xF4, \u0111i\u1EC7n tho\u1EA1i di \u0111\u1ED9ng,
+      thi\u1EBFt b\u1ECB \xE2m thanh (tr\u1EEB thi\u1EBFt b\u1ECB tr\u1EE3 th\xEDnh). "
+    - "2. Ph\u1EA3i \u0111\u1ED9i m\u0169 b\u1EA3o hi\u1EC3m khi tr\u1EDDi m\u01B0a
+      gi\xF3 ho\u1EB7c tr\u1EDDi qu\xE1 n\u1EAFng; c\xF3 th\u1EC3 s\u1EED d\u1EE5ng
+      \xF4, \u0111i\u1EC7n tho\u1EA1i di \u0111\u1ED9ng, thi\u1EBFt b\u1ECB \xE2m
+      thanh nh\u01B0ng ph\u1EA3i \u0111\u1EA3m b\u1EA3o an to\xE0n. "
+    - "3. Ph\u1EA3i \u0111\u1ED9i m\u0169 b\u1EA3o hi\u1EC3m khi c\u1EA3m th\u1EA5y
+      m\u1EA5t an to\xE0n giao th\xF4ng ho\u1EB7c khi chu\u1EA9n b\u1ECB di chuy\u1EC3n
+      qu\xE3ng \u0111\u01B0\u1EDDng xa. "
+    - 
+    correctAnswer: "1. Ph\u1EA3i \u0111\u1ED9i m\u0169 b\u1EA3o hi\u1EC3m \u0111\u1EA1t
+      chu\u1EA9n, c\xF3 c\xE0i quai \u0111\xFAng quy c\xE1ch, m\u1EB7c qu\u1EA7n
+      \xE1o g\u1ECDn g\xE0ng; kh\xF4ng s\u1EED d\u1EE5ng \xF4, \u0111i\u1EC7n tho\u1EA1i
+      di \u0111\u1ED9ng, thi\u1EBFt b\u1ECB \xE2m thanh (tr\u1EEB thi\u1EBFt b\u1ECB
+      tr\u1EE3 th\xEDnh). "
+  - questImage: {fileID: 0}
+    question: "C\xE2u h\u1ECFi 68: \u0110\u01B0\u1EDDng b\u1ED9 trong khu v\u1EF1c
+      \u0111\xF4ng d\xE2n c\u01B0 g\u1ED3m nh\u1EEFng \u0111o\u1EA1n \u0111\u01B0\u1EDDng
+      n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
+    answers:
+    - "1. L\xE0 \u0111o\u1EA1n \u0111\u01B0\u1EDDng n\u1EB1m trong khu c\xF4ng nghi\u1EC7p
+      c\xF3 \u0111\xF4ng ng\u01B0\u1EDDi v\xE0 ph\u01B0\u01A1ng ti\u1EC7n tham gia
+      giao th\xF4ng v\xE0 \u0111\u01B0\u1EE3c x\xE1c \u0111\u1ECBnh c\u1EE5 th\u1EC3
+      b\u1EB1ng bi\u1EC3n ch\u1EC9 d\u1EABn \u0111\u1ECBa gi\u1EDBi. "
+    - "2. L\xE0 \u0111o\u1EA1n \u0111\u01B0\u1EDDng b\u1ED9 n\u1EB1m trong khu v\u1EF1c
+      n\u1ED9i th\xE0nh ph\u1ED1, n\u1ED9i th\u1ECB x\xE3, n\u1ED9i th\u1ECB tr\u1EA5n
+      v\xE0 nh\u1EEFng \u0111o\u1EA1n \u0111\u01B0\u1EDDng c\xF3 \u0111\xF4ng d\xE2n
+      c\u01B0 sinh s\u1ED1ng s\xE1t d\u1ECDc theo \u0111\u01B0\u1EDDng, c\xF3 c\xE1c
+      ho\u1EA1t \u0111\u1ED9ng \u1EA3nh h\u01B0\u1EDFng \u0111\u1EBFn an to\xE0n
+      giao th\xF4ng; \u0111\u01B0\u1EE3c x\xE1c \u0111\u1ECBnh b\u1EB1ng bi\u1EC3n
+      b\xE1o hi\u1EC7u l\xE0 \u0111\u01B0\u1EDDng khu \u0111\xF4ng d\xE2n c\u01B0. "
+    - "3. L\xE0 \u0111o\u1EA1n \u0111\u01B0\u1EDDng n\u1EB1m ngo\xE0i khu v\u1EF1c
+      n\u1ED9i th\xE0nh ph\u1ED1, n\u1ED9i th\u1ECB x\xE3 c\xF3 \u0111\xF4ng ng\u01B0\u1EDDi
+      v\xE0 ph\u01B0\u01A1ng ti\u1EC7n tham gia giao th\xF4ng v\xE0 \u0111\u01B0\u1EE3c
+      x\xE1c \u0111\u1ECBnh c\u1EE5 th\u1EC3 b\u1EB1ng bi\u1EC3n ch\u1EC9 d\u1EABn
+      \u0111\u1ECBa gi\u1EDBi. "
+    - 
+    correctAnswer: "2. L\xE0 \u0111o\u1EA1n \u0111\u01B0\u1EDDng b\u1ED9 n\u1EB1m
+      trong khu v\u1EF1c n\u1ED9i th\xE0nh ph\u1ED1, n\u1ED9i th\u1ECB x\xE3, n\u1ED9i
+      th\u1ECB tr\u1EA5n v\xE0 nh\u1EEFng \u0111o\u1EA1n \u0111\u01B0\u1EDDng c\xF3
+      \u0111\xF4ng d\xE2n c\u01B0 sinh s\u1ED1ng s\xE1t d\u1ECDc theo \u0111\u01B0\u1EDDng,
+      c\xF3 c\xE1c ho\u1EA1t \u0111\u1ED9ng \u1EA3nh h\u01B0\u1EDFng \u0111\u1EBFn
+      an to\xE0n giao th\xF4ng; \u0111\u01B0\u1EE3c x\xE1c \u0111\u1ECBnh b\u1EB1ng
+      bi\u1EC3n b\xE1o hi\u1EC7u l\xE0 \u0111\u01B0\u1EDDng khu \u0111\xF4ng d\xE2n
+      c\u01B0. "
   - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
-    answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 69: T\u1ED1c \u0111\u1ED9 t\u1ED1i \u0111a cho ph\xE9p
+      \u0111\u1ED1i v\u1EDBi xe m\xE1y chuy\xEAn d\xF9ng, xe g\u1EAFn m\xE1y (k\u1EC3
+      c\u1EA3 xe m\xE1y \u0111i\u1EC7n) v\xE0 c\xE1c lo\u1EA1i xe t\u01B0\u01A1ng
+      t\u1EF1 tr\xEAn \u0111\u01B0\u1EDDng b\u1ED9 (tr\u1EEB \u0111\u01B0\u1EDDng
+      cao t\u1ED1c) kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t qu\xE1 bao nhi\xEAu
+      km/h?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    - '1. 50 km/h. '
+    - '2. 40 km/h. '
+    - '3. 60 km/h. '
+    - 
+    correctAnswer: '2. 40 km/h. '
   - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 70: Tr\xEAn \u0111\u01B0\u1EDDng b\u1ED9 (tr\u1EEB
+      \u0111\u01B0\u1EDDng cao t\u1ED1c) trong khu v\u1EF1c \u0111\xF4ng d\xE2n c\u01B0,
+      \u0111\u01B0\u1EDDng \u0111\xF4i c\xF3 d\u1EA3i ph\xE2n c\xE1ch gi\u1EEFa,
+      xe m\xF4 t\xF4 hai b\xE1nh, \xF4 t\xF4 ch\u1EDF ng\u01B0\u1EDDi \u0111\u1EBFn
+      30 ch\u1ED7 tham gia giao th\xF4ng v\u1EDBi t\u1ED1c \u0111\u1ED9 t\u1ED1i
+      \u0111a cho ph\xE9p l\xE0 bao nhi\xEAu?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    - '1. 60 km/h. '
+    - '2. 50 km/h. '
+    - '3. 40 km/h. '
+    - 
+    correctAnswer: '1. 60 km/h. '
   - questImage: {fileID: 0}
     question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
     answers:
@@ -1522,342 +1756,409 @@ MonoBehaviour:
     - "Kh\xF4ng"
     - No
     correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+  - questImage: {fileID: -8360879614975187738, guid: b71afe04465d949498fb739c4fcd4f75, type: 3}
+    question: "C\xE2u h\u1ECFi 150: Trong c\xE1c bi\u1EC3n d\u01B0\u1EDBi \u0111\xE2y
+      bi\u1EC3n n\xE0o l\xE0 bi\u1EC3n \u201CH\u1EBFt t\u1ED1c \u0111\u1ED9 t\u1ED1i
+      \u0111a cho ph\xE9p\u201D?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - "4. C\u1EA3 ba bi\u1EC3n. "
+    correctAnswer: "1. Bi\u1EC3n 1. "
+  - questImage: {fileID: 3240771949959905238, guid: e818f90a9a4bcea4381af8be33b15f41, type: 3}
+    question: "C\xE2u h\u1ECFi 151: Hi\u1EC7u l\u1EF1c c\u1EE7a bi\u1EC3n \u201CT\u1ED1c
+      \u0111\u1ED9 t\u1ED1i \u0111a cho ph\xE9p\u201D h\u1EBFt t\xE1c d\u1EE5ng khi
+      g\u1EB7p bi\u1EC3n n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - "4. Bi\u1EC3n 1 v\xE0 2. "
+    correctAnswer: "4. Bi\u1EC3n 1 v\xE0 2. "
+  - questImage: {fileID: 8085457943530820063, guid: 65c3ad9e8a723ea48833cb6797c760d2, type: 3}
+    question: "C\xE2u h\u1ECFi 152: Trong c\xE1c bi\u1EC3n d\u01B0\u1EDBi \u0111\xE2y
+      bi\u1EC3n n\xE0o l\xE0 bi\u1EC3n \u201CH\u1EBFt t\u1ED1c \u0111\u1ED9 t\u1ED1i
+      thi\u1EC3u\u201D?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - "4. C\u1EA3 ba bi\u1EC3n. "
+    correctAnswer: "3. Bi\u1EC3n 3. "
+  - questImage: {fileID: -7940827239214445456, guid: 6c079888c97545c4d97a1465b38ee9d2, type: 3}
+    question: "C\xE2u h\u1ECFi 153: Bi\u1EC3n n\xE0o d\u01B0\u1EDBi \u0111\xE2y b\xE1o
+      hi\u1EC7u h\u1EBFt c\u1EA5m v\u01B0\u1EE3t?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - "4. Bi\u1EC3n 2 v\xE0 3. "
+    correctAnswer: "4. Bi\u1EC3n 2 v\xE0 3. "
+  - questImage: {fileID: 4185985745166538138, guid: cf1f3a543b118144e923d74e9f093963, type: 3}
+    question: "C\xE2u h\u1ECFi 154: Trong c\xE1c bi\u1EC3n d\u01B0\u1EDBi \u0111\xE2y
+      bi\u1EC3n n\xE0o l\xE0 bi\u1EC3n \u201CH\u1EBFt m\u1ECDi l\u1EC7nh c\u1EA5m\u201D?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - "4. C\u1EA3 ba bi\u1EC3n. "
+    correctAnswer: "2. Bi\u1EC3n 2. "
+  - questImage: {fileID: -4214485401508202297, guid: daaf0c592dc4f48438e17e74b252e226, type: 3}
+    question: "C\xE2u h\u1ECFi 155: Bi\u1EC3n n\xE0o ch\u1EC9 d\u1EABn cho ng\u01B0\u1EDDi
+      \u0111i b\u1ED9 s\u1EED d\u1EE5ng c\u1EA7u v\u01B0\u1EE3t qua \u0111\u01B0\u1EDDng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. C\u1EA3 hai bi\u1EC3n. "
+    - "4. Kh\xF4ng bi\u1EC3n n\xE0o. "
+    correctAnswer: "1. Bi\u1EC3n 1. "
+  - questImage: {fileID: -4262508666627876441, guid: 90a587fd6c2ea5441b8df4e235e8c154, type: 3}
+    question: "C\xE2u h\u1ECFi 156: Bi\u1EC3n n\xE0o ch\u1EC9 d\u1EABn cho ng\u01B0\u1EDDi
+      \u0111i b\u1ED9 s\u1EED d\u1EE5ng h\u1EA7m chui qua \u0111\u01B0\u1EDDng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. C\u1EA3 hai bi\u1EC3n. "
+    - "4. Kh\xF4ng bi\u1EC3n n\xE0o. "
+    correctAnswer: "2. Bi\u1EC3n 2. "
+  - questImage: {fileID: -8319561624988126955, guid: 8825dea9f403e1847b53211bd6bc9d46, type: 3}
+    question: "C\xE2u h\u1ECFi 157: Bi\u1EC3n n\xE0o b\xE1o hi\u1EC7u \u201CN\u01A1i
+      \u0111\u1ED7 xe d\xE0nh cho ng\u01B0\u1EDDi khuy\u1EBFt t\u1EADt\u201D?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Bi\u1EC3n 1. "
+    - "2. Bi\u1EC3n 2. "
+    - "3. Bi\u1EC3n 3. "
+    - 
+    correctAnswer: "2. Bi\u1EC3n 2. "
+  - questImage: {fileID: -1607125981010089075, guid: dfe547ee79f21b94db58451c97b67706, type: 3}
+    question: "C\xE2u h\u1ECFi 158: G\u1EB7p bi\u1EC3n b\xE1o n\xE0y, ng\u01B0\u1EDDi
+      tham gia giao th\xF4ng ph\u1EA3i x\u1EED l\xFD nh\u01B0 th\u1EBF n\xE0o?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. D\u1EEBng xe t\u1EA1i khu v\u1EF1c c\xF3 tr\u1EA1m C\u1EA3nh s\xE1t giao
+      th\xF4ng. "
+    - "2. Ti\u1EBFp t\u1EE5c l\u01B0u th\xF4ng v\u1EDBi t\u1ED1c \u0111\u1ED9 b\xECnh
+      th\u01B0\u1EDDng. "
+    - "3. Ph\u1EA3i gi\u1EA3m t\u1ED1c \u0111\u1ED9 \u0111\u1EBFn m\u1EE9c an to\xE0n
+      v\xE0 kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t khi \u0111i qua khu v\u1EF1c
+      n\xE0y. "
+    - 
+    correctAnswer: "3. Ph\u1EA3i gi\u1EA3m t\u1ED1c \u0111\u1ED9 \u0111\u1EBFn m\u1EE9c
+      an to\xE0n v\xE0 kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t khi \u0111i qua
+      khu v\u1EF1c n\xE0y. "
+  - questImage: {fileID: -9096838086184495297, guid: 51aa57e61ae6b5d4d9cd54447cc2fac4, type: 3}
+    question: "C\xE2u h\u1ECFi 159: Bi\u1EC3n s\u1ED1 1 c\xF3 \xFD ngh\u0129a g\xEC?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. \u0110i th\u1EB3ng ho\u1EB7c r\u1EBD tr\xE1i tr\xEAn c\u1EA7u v\u01B0\u1EE3t. "
+    - "2. \u0110i th\u1EB3ng ho\u1EB7c r\u1EBD ph\u1EA3i tr\xEAn c\u1EA7u v\u01B0\u1EE3t. "
+    - "3. B\xE1o hi\u1EC7u c\u1EA7u v\u01B0\u1EE3t li\xEAn th\xF4ng. "
+    - 
+    correctAnswer: "3. B\xE1o hi\u1EC7u c\u1EA7u v\u01B0\u1EE3t li\xEAn th\xF4ng. "
+  - questImage: {fileID: 7660151770920222535, guid: 89b25974535dce3498379fe11911d9c7, type: 3}
+    question: "C\xE2u h\u1ECFi 160: V\u1EA1ch k\u1EBB \u0111\u01B0\u1EDDng n\xE0o
+      d\u01B0\u1EDBi \u0111\xE2y l\xE0 v\u1EA1ch ph\xE2n chia c\xE1c l\xE0n xe c\xF9ng
+      chi\u1EC1u?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. V\u1EA1ch 1. "
+    - "2. V\u1EA1ch 2. "
+    - "3. V\u1EA1ch 3. "
+    - "4. V\u1EA1ch 1 v\xE0 2. "
+    correctAnswer: "4. V\u1EA1ch 1 v\xE0 2. "
+  - questImage: {fileID: -2747830368126975463, guid: 5fb97e0ddb8d5844088fb10812b897c5, type: 3}
+    question: "C\xE2u h\u1ECFi 161: V\u1EA1ch k\u1EBB \u0111\u01B0\u1EDDng n\xE0o
+      d\u01B0\u1EDBi \u0111\xE2y l\xE0 v\u1EA1ch ph\xE2n chia hai chi\u1EC1u xe ch\u1EA1y
+      (v\u1EA1ch tim \u0111\u01B0\u1EDDng), xe kh\xF4ng \u0111\u01B0\u1EE3c l\u1EA5n
+      l\xE0n, kh\xF4ng \u0111\u01B0\u1EE3c \u0111\xE8 l\xEAn v\u1EA1ch?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. V\u1EA1ch 1. "
+    - "2. V\u1EA1ch 2. "
+    - "3. V\u1EA1ch 3. "
+    - "4. C\u1EA3 3 v\u1EA1ch. "
+    correctAnswer: "2. V\u1EA1ch 2. "
+  - questImage: {fileID: -3260773850857953783, guid: 5434f8061f2460d48b64d19bf9f6abb5, type: 3}
+    question: "C\xE2u h\u1ECFi 162: V\u1EA1ch k\u1EBB \u0111\u01B0\u1EDDng n\xE0o
+      d\u01B0\u1EDBi \u0111\xE2y l\xE0 v\u1EA1ch ph\xE2n chia hai chi\u1EC1u xe ch\u1EA1y
+      (v\u1EA1ch tim \u0111\u01B0\u1EDDng)?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. V\u1EA1ch 1. "
+    - "2. V\u1EA1ch 2. "
+    - "3. V\u1EA1ch 3. "
+    - "4. V\u1EA1ch 1 v\xE0 3. "
+    correctAnswer: "4. V\u1EA1ch 1 v\xE0 3. "
+  - questImage: {fileID: -8388659320944181037, guid: ecb79b11967932c4c97cde8d9c574b53, type: 3}
+    question: "C\xE2u h\u1ECFi 163: C\xE1c v\u1EA1ch d\u01B0\u1EDBi \u0111\xE2y c\xF3
+      t\xE1c d\u1EE5ng g\xEC?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Ph\xE2n chia hai chi\u1EC1u xe ch\u1EA1y ng\u01B0\u1EE3c chi\u1EC1u nhau. "
+    - "2. Ph\xE2n chia c\xE1c l\xE0n xe ch\u1EA1y c\xF9ng chi\u1EC1u nhau. "
+    - 
+    - 
+    correctAnswer: "1. Ph\xE2n chia hai chi\u1EC1u xe ch\u1EA1y ng\u01B0\u1EE3c chi\u1EC1u
+      nhau. "
+  - questImage: {fileID: 840618992089181356, guid: d98101b66f4b10343ba3bb6fb5d3bd9e, type: 3}
+    question: "C\xE2u h\u1ECFi 164: Khi g\u1EB7p v\u1EA1ch k\u1EBB \u0111\u01B0\u1EDDng
+      n\xE0o c\xE1c xe \u0111\u01B0\u1EE3c ph\xE9p \u0111\xE8 v\u1EA1ch?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. V\u1EA1ch 1. "
+    - "2. V\u1EA1ch 2. "
+    - "3. V\u1EA1ch 3. "
+    - "4. V\u1EA1ch 1 v\xE0 v\u1EA1ch 3. "
+    correctAnswer: "4. V\u1EA1ch 1 v\xE0 v\u1EA1ch 3. "
+  - questImage: {fileID: -1256822295473667560, guid: 174e84abcf48c154b994b6fbc2741814, type: 3}
+    question: "C\xE2u h\u1ECFi 165: V\u1EA1ch d\u01B0\u1EDBi \u0111\xE2y c\xF3 \xFD
+      ngh\u0129a g\xEC?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. V\u1ECB tr\xED d\u1EEBng xe c\u1EE7a c\xE1c ph\u01B0\u01A1ng ti\u1EC7n
+      v\u1EADn t\u1EA3i h\xE0nh kh\xE1ch c\xF4ng c\u1ED9ng. "
+    - "2. B\xE1o cho ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n \u0111\u01B0\u1EE3c
+      d\u1EEBng ph\u01B0\u01A1ng ti\u1EC7n trong ph\u1EA1m vi ph\u1EA7n m\u1EB7t
+      \u0111\u01B0\u1EDDng c\xF3 b\u1ED1 tr\xED v\u1EA1ch \u0111\u1EC3 tr\xE1nh \xF9n
+      t\u1EAFc giao th\xF4ng. "
+    - "3. D\xF9ng \u0111\u1EC3 x\xE1c \u0111\u1ECBnh v\u1ECB tr\xED gi\u1EEFa c\xE1c
+      ph\u01B0\u01A1ng ti\u1EC7n tr\xEAn \u0111\u01B0\u1EDDng. "
+    - 
+    correctAnswer: "1. V\u1ECB tr\xED d\u1EEBng xe c\u1EE7a c\xE1c ph\u01B0\u01A1ng
+      ti\u1EC7n v\u1EADn t\u1EA3i h\xE0nh kh\xE1ch c\xF4ng c\u1ED9ng. "
+  - questImage: {fileID: 5190515763079655994, guid: daa91e46429febf46b6e27383c8aef95, type: 3}
+    question: "C\xE2u h\u1ECFi 166: Th\u1EE9 t\u1EF1 c\xE1c xe \u0111i nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe t\u1EA3i, xe kh\xE1ch, xe con, m\xF4 t\xF4. "
+    - "2. Xe t\u1EA3i, m\xF4 t\xF4, xe kh\xE1ch, xe con. "
+    - "3. Xe kh\xE1ch, xe t\u1EA3i, xe con, m\xF4 t\xF4. "
+    - "4. M\xF4 t\xF4, xe kh\xE1ch, xe t\u1EA3i, xe con. "
+    correctAnswer: "2. Xe t\u1EA3i, m\xF4 t\xF4, xe kh\xE1ch, xe con. "
+  - questImage: {fileID: 8965364446731349160, guid: b778421ab7605634f8f3d6faa44af842, type: 3}
+    question: "C\xE2u h\u1ECFi 167: Th\u1EE9 t\u1EF1 c\xE1c xe \u0111i nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe t\u1EA3i, xe con, m\xF4 t\xF4. "
+    - "2. Xe con, xe t\u1EA3i, m\xF4 t\xF4. "
+    - "3. M\xF4 t\xF4, xe con, xe t\u1EA3i. "
+    - "4. Xe con, m\xF4 t\xF4, xe t\u1EA3i. "
+    correctAnswer: "3. M\xF4 t\xF4, xe con, xe t\u1EA3i. "
+  - questImage: {fileID: 5239832957056234502, guid: 20e9a2b476bc94648b48efbdf9ccd502, type: 3}
+    question: "C\xE2u h\u1ECFi 168: Tr\u01B0\u1EDDng h\u1EE3p n\xE0y xe n\xE0o \u0111\u01B0\u1EE3c
+      quy\u1EC1n \u0111i tr\u01B0\u1EDBc?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. M\xF4 t\xF4. "
+    - '2. Xe con. '
+    - 
+    - 
+    correctAnswer: '2. Xe con. '
+  - questImage: {fileID: 8189575912426183195, guid: 072e8f8a6ffd96a42908317a97af6545, type: 3}
+    question: "C\xE2u h\u1ECFi 169: Xe n\xE0o \u0111\u01B0\u1EE3c quy\u1EC1n \u0111i
+      tr\u01B0\u1EDBc trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. M\xF4 t\xF4. "
+    - "2. Xe c\u1EE9u th\u01B0\u01A1ng. "
+    - 
+    - 
+    correctAnswer: "2. Xe c\u1EE9u th\u01B0\u01A1ng. "
+  - questImage: {fileID: -1935208645491430459, guid: f7295bc6ceb5fdc47a77daca124a766f, type: 3}
+    question: "C\xE2u h\u1ECFi 170: Theo t\xEDn hi\u1EC7u \u0111\xE8n, xe n\xE0o
+      \u0111\u01B0\u1EE3c ph\xE9p \u0111i?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe con v\xE0 xe kh\xE1ch. "
+    - "2. M\xF4 t\xF4. "
+    - 
+    - 
+    correctAnswer: "1. Xe con v\xE0 xe kh\xE1ch. "
+  - questImage: {fileID: 5572570187737067774, guid: 4bb9d938a7546ea4594a8bc1f77981d6, type: 3}
+    question: "C\xE2u h\u1ECFi 171: C\xE1c xe \u0111i theo h\u01B0\u1EDBng m\u0169i
+      t\xEAn, xe n\xE0o vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe kh\xE1ch, xe t\u1EA3i, m\xF4 t\xF4. "
+    - "2. Xe t\u1EA3i, xe con, m\xF4 t\xF4. "
+    - "3. Xe kh\xE1ch, xe con, m\xF4 t\xF4. "
+    - 
+    correctAnswer: "1. Xe kh\xE1ch, xe t\u1EA3i, m\xF4 t\xF4. "
+  - questImage: {fileID: -3522640970901305850, guid: ec634b3ac63bddd4198c56772cee8ed2, type: 3}
+    question: "C\xE2u h\u1ECFi 172: Th\u1EE9 t\u1EF1 c\xE1c xe \u0111i nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe kh\xE1ch, xe t\u1EA3i, m\xF4 t\xF4, xe con. "
+    - "2. Xe con, xe kh\xE1ch, xe t\u1EA3i, m\xF4 t\xF4. "
+    - "3. M\xF4 t\xF4, xe t\u1EA3i, xe kh\xE1ch, xe con. "
+    - "4. M\xF4 t\xF4, xe t\u1EA3i, xe con, xe kh\xE1ch. "
+    correctAnswer: "3. M\xF4 t\xF4, xe t\u1EA3i, xe kh\xE1ch, xe con. "
+  - questImage: {fileID: -612568621043222047, guid: 3211ba9fd0ab8de4d9ff171a711591bd, type: 3}
+    question: "C\xE2u h\u1ECFi 173: Trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y xe n\xE0o
+      \u0111\u1ED7 vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe t\u1EA3i. "
+    - "2. Xe con v\xE0 m\xF4 t\xF4. "
+    - "3. C\u1EA3 ba xe. "
+    - "4. Xe con v\xE0 xe t\u1EA3i. "
+    correctAnswer: "1. Xe t\u1EA3i"
+  - questImage: {fileID: -3097657671265015150, guid: e0d6397c9fd14b843b55cf4009e8fa9d, type: 3}
+    question: "C\xE2u h\u1ECFi 174: Theo h\u01B0\u1EDBng m\u0169i t\xEAn, nh\u1EEFng
+      h\u01B0\u1EDBng n\xE0o xe g\u1EAFn m\xE1y \u0111i \u0111\u01B0\u1EE3c?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. C\u1EA3 ba h\u01B0\u1EDBng. "
+    - "2. Ch\u1EC9 h\u01B0\u1EDBng 1 v\xE0 3. "
+    - "3. Ch\u1EC9 h\u01B0\u1EDBng 1. "
+    - 
+    correctAnswer: "1. C\u1EA3 ba h\u01B0\u1EDBng. "
+  - questImage: {fileID: 7127973653138568790, guid: 2de4aaa9b8e58a64c9d2015440ae0b2b, type: 3}
+    question: "C\xE2u h\u1ECFi 175: Xe n\xE0o \u0111\u1ED7 vi ph\u1EA1m quy t\u1EAFc
+      giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. C\u1EA3 hai xe. "
+    - "2. Kh\xF4ng xe n\xE0o vi ph\u1EA1m. "
+    - "3. Ch\u1EC9 xe m\xF4 t\xF4 vi ph\u1EA1m. "
+    - "4. Ch\u1EC9 xe t\u1EA3i vi ph\u1EA1m. "
+    correctAnswer: "1. C\u1EA3 hai xe. "
+  - questImage: {fileID: 4291217412651130720, guid: 737fd41feddc11f40a2a59f7ad6265dc, type: 3}
+    question: "C\xE2u h\u1ECFi 176: Xe n\xE0o \u0111\u1ED7 vi ph\u1EA1m quy t\u1EAFc
+      giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Ch\u1EC9 m\xF4 t\xF4. "
+    - "2. Ch\u1EC9 xe t\u1EA3i. "
+    - "3. C\u1EA3 ba xe. "
+    - "4. Ch\u1EC9 m\xF4 t\xF4 v\xE0 xe t\u1EA3i. "
+    correctAnswer: "3. C\u1EA3 ba xe. "
+  - questImage: {fileID: 6475318878948390235, guid: c198192e7fdb30346a6c543272de7833, type: 3}
+    question: "C\xE2u h\u1ECFi 177: Xe t\u1EA3i k\xE9o m\xF4 t\xF4 ba b\xE1nh nh\u01B0
+      h\xECnh n\xE0y c\xF3 \u0111\xFAng quy t\u1EAFc giao th\xF4ng kh\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. \u0110\xFAng. "
+    - "2. Kh\xF4ng \u0111\xFAng. "
+    - 
+    - 
+    correctAnswer: "2. Kh\xF4ng \u0111\xFAng. "
+  - questImage: {fileID: 3655641700321744874, guid: f0ec4d5e8f81be640bab490e75c57727, type: 3}
+    question: "C\xE2u h\u1ECFi 178: Xe n\xE0o \u0111\u01B0\u1EE3c quy\u1EC1n \u0111i
+      tr\u01B0\u1EDBc trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - '1. Xe con. '
+    - "2. Xe m\xF4 t\xF4. "
+    - 
+    - 
+    correctAnswer: "2. Xe m\xF4 t\xF4. "
+  - questImage: {fileID: -7282939082659695587, guid: 9c7fcfd171ff4ce4bb239caf2d828c40, type: 3}
+    question: "C\xE2u h\u1ECFi 179: Th\u1EE9 t\u1EF1 c\xE1c xe \u0111i nh\u01B0 th\u1EBF
+      n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe con (A), m\xF4 t\xF4, xe con (B), xe \u0111\u1EA1p. "
+    - "2. Xe con (B), xe \u0111\u1EA1p, m\xF4 t\xF4, xe con (A). "
+    - "3. Xe con (A), xe con (B), m\xF4 t\xF4  + xe \u0111\u1EA1p. "
+    - "4. M\xF4 t\xF4 + xe \u0111\u1EA1p, xe con (A), xe con (B). "
+    correctAnswer: "4. M\xF4 t\xF4 + xe \u0111\u1EA1p, xe con (A), xe con (B). "
+  - questImage: {fileID: -8684454105028185732, guid: b258b27a056a57a4db961a5efde7113a, type: 3}
+    question: "C\xE2u h\u1ECFi 180: Xe n\xE0o \u0111\u01B0\u1EE3c quy\u1EC1n \u0111i
+      tr\u01B0\u1EDBc trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. M\xF4 t\xF4. "
+    - '2. Xe con. '
+    - 
+    - 
+    correctAnswer: "1. M\xF4 t\xF4. "
+  - questImage: {fileID: 1595175223681864802, guid: 2b74e8b9fafe77b40b2feaad27d70b11, type: 3}
+    question: "C\xE2u h\u1ECFi 181: Xe n\xE0o vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe kh\xE1ch."
+    - "2. M\xF4 t\xF4. "
+    - '3. Xe con. '
+    - "4. Xe con v\xE0 m\xF4 t\xF4. "
+    correctAnswer: '3. Xe con. '
+  - questImage: {fileID: 2930805544512540207, guid: adcdc9432699ec34c954af79ccac7170, type: 3}
+    question: "C\xE2u h\u1ECFi 182: C\xE1c xe \u0111i nh\u01B0 th\u1EBF n\xE0o l\xE0
+      \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. C\xE1c xe \u1EDF ph\xEDa tay ph\u1EA3i v\xE0 tay tr\xE1i c\u1EE7a ng\u01B0\u1EDDi
+      \u0111i\u1EC1u khi\u1EC3n \u0111\u01B0\u1EE3c ph\xE9p \u0111i th\u1EB3ng. "
+    - "2. Cho ph\xE9p c\xE1c xe \u1EDF m\u1ECDi h\u01B0\u1EDBng \u0111\u01B0\u1EE3c
+      r\u1EBD ph\u1EA3i. "
+    - "3. T\u1EA5t c\u1EA3 c\xE1c xe ph\u1EA3i d\u1EEBng l\u1EA1i tr\u01B0\u1EDBc
+      ng\xE3 t\u01B0, tr\u1EEB nh\u1EEFng xe \u0111\xE3 \u1EDF trong ng\xE3 t\u01B0
+      \u0111\u01B0\u1EE3c ph\xE9p ti\u1EBFp t\u1EE5c \u0111i. "
+    - 
+    correctAnswer: "3. T\u1EA5t c\u1EA3 c\xE1c xe ph\u1EA3i d\u1EEBng l\u1EA1i tr\u01B0\u1EDBc
+      ng\xE3 t\u01B0, tr\u1EEB nh\u1EEFng xe \u0111\xE3 \u1EDF trong ng\xE3 t\u01B0
+      \u0111\u01B0\u1EE3c ph\xE9p ti\u1EBFp t\u1EE5c \u0111i. "
+  - questImage: {fileID: 4696048389457946451, guid: e23bdef1c08174a4fa95a5af6e86c79e, type: 3}
+    question: "C\xE2u h\u1ECFi 183: Theo h\u01B0\u1EDBng m\u0169i t\xEAn, xe n\xE0o
+      \u0111\u01B0\u1EE3c ph\xE9p \u0111i?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. M\xF4 t\xF4, xe con. "
+    - "2. Xe con, xe t\u1EA3i. "
+    - "3. M\xF4 t\xF4, xe t\u1EA3i. "
+    - "4. C\u1EA3 ba xe. "
+    correctAnswer: "3. M\xF4 t\xF4, xe t\u1EA3i. "
+  - questImage: {fileID: -2284512563617339538, guid: a97a4a2fcf757064cadf60a20490c35f, type: 3}
+    question: "C\xE2u h\u1ECFi 184: Trong h\xECnh d\u01B0\u1EDBi \u0111\xE2y, xe
+      n\xE0o ch\u1EA5p h\xE0nh \u0111\xFAng quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Ch\u1EC9 xe kh\xE1ch, m\xF4 t\xF4. "
+    - "2. T\u1EA5t c\u1EA3 c\xE1c lo\u1EA1i xe tr\xEAn. "
+    - "3. Kh\xF4ng xe n\xE0o ch\u1EA5p h\xE0nh \u0111\xFAng quy t\u1EAFc giao th\xF4ng. "
+    - 
+    correctAnswer: "2. T\u1EA5t c\u1EA3 c\xE1c lo\u1EA1i xe tr\xEAn. "
+  - questImage: {fileID: -7890173585145792739, guid: e4ab8606d58fa684c9e4f149f4d8bc22, type: 3}
+    question: "C\xE2u h\u1ECFi 185: Theo h\u01B0\u1EDBng m\u0169i t\xEAn, nh\u1EEFng
+      h\u01B0\u1EDBng n\xE0o xe m\xF4 t\xF4 \u0111\u01B0\u1EE3c ph\xE9p \u0111i?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    - "1. C\u1EA3 ba h\u01B0\u1EDBng. "
+    - "2. H\u01B0\u1EDBng 1 v\xE0 2. "
+    - "3. H\u01B0\u1EDBng 1 v\xE0 3. "
+    - "4. H\u01B0\u1EDBng 2 v\xE0 3. "
+    correctAnswer: "3. H\u01B0\u1EDBng 1 v\xE0 3. "
   - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 186: Trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y, th\u1EE9
+      t\u1EF1 xe \u0111i nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc
+      giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe c\xF4ng an, xe qu\xE2n s\u1EF1, xe con + m\xF4 t\xF4. "
+    - "2. Xe qu\xE2n s\u1EF1, xe c\xF4ng an, xe con +m\xF4 t\xF4. "
+    - "3. Xe m\xF4 t\xF4 + xe con, xe qu\xE2n s\u1EF1, xe c\xF4ng an. "
+    - 
+    correctAnswer: "2. Xe qu\xE2n s\u1EF1, xe c\xF4ng an, xe con +m\xF4 t\xF4. "
+  - questImage: {fileID: -8508037998297491166, guid: e9f041136f6e4f845a7962a7b7691a7d, type: 3}
+    question: "C\xE2u h\u1ECFi 187: Trong h\xECnh d\u01B0\u1EDBi, nh\u1EEFng xe n\xE0o
+      vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe con (E), m\xF4 t\xF4 (C). "
+    - "2. Xe t\u1EA3i (A), m\xF4 t\xF4 (D). "
+    - "3. Xe kh\xE1ch (B), m\xF4 t\xF4 (C). "
+    - "4. Xe kh\xE1ch (B), m\xF4 t\xF4 (D). "
+    correctAnswer: "1. Xe con (E), m\xF4 t\xF4 (C). "
+  - questImage: {fileID: 8473293282659325741, guid: ca23d16bc1b56e54590600aa399c761f, type: 3}
+    question: "C\xE2u h\u1ECFi 188: Trong h\xECnh d\u01B0\u1EDBi, nh\u1EEFng xe n\xE0o
+      vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Xe con (B), m\xF4 t\xF4 (C). "
+    - "2. Xe con (A), m\xF4 t\xF4 (C). "
+    - "3. Xe con (E), m\xF4 t\xF4 (D). "
+    - "4. T\u1EA5t c\u1EA3 c\xE1c lo\u1EA1i xe tr\xEAn. "
+    correctAnswer: "3. Xe con (E), m\xF4 t\xF4 (D). "
+  - questImage: {fileID: 6480597323353002809, guid: 127750cdf5a4ec542924090c47c1c364, type: 3}
+    question: "C\xE2u h\u1ECFi 189: B\u1EA1n c\xF3 \u0111\u01B0\u1EE3c ph\xE9p v\u01B0\u1EE3t
+      xe m\xF4 t\xF4 ph\xEDa tr\u01B0\u1EDBc kh\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
-  - questImage: {fileID: 0}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    - "1. Cho ph\xE9p. "
+    - "2. Kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t. "
+    - 
+    - 
+    correctAnswer: "2. Kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t. "
+  - questImage: {fileID: -5097457172474290915, guid: ca8e422d5ce708545bab315e34044c81, type: 3}
+    question: "C\xE2u h\u1ECFi 190: Theo t\xEDn hi\u1EC7u \u0111\xE8n c\u1EE7a xe
+      c\u01A1 gi\u1EDBi, xe n\xE0o vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    - "1. Xe m\xF4 t\xF4. "
+    - "2. Xe \xF4 t\xF4 con. "
+    - "3. Kh\xF4ng xe n\xE0o vi ph\u1EA1m. "
+    - "4. C\u1EA3 hai xe. "
+    correctAnswer: "4. C\u1EA3 hai xe. "
   - questImage: {fileID: -5237152906243706819, guid: efb332381ef616044af1b7d4140bb5d5, type: 3}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 191: C\xE1c xe \u0111i theo h\u01B0\u1EDBng m\u0169i
+      t\xEAn, xe n\xE0o vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
     answers:
-    - "C\xF3"
-    - Yes
-    - "Kh\xF4ng"
-    - No
-    correctAnswer: "C\xF3"
+    - '1. Xe con. '
+    - "2. Xe t\u1EA3i. "
+    - "3. Xe con, xe t\u1EA3i. "
+    - 
+    correctAnswer: "2. Xe t\u1EA3i. "
   - questImage: {fileID: 6023906151118515202, guid: b9bc4211bc9a9a646a2a22b4db5fb02f, type: 3}
     question: "C\xE2u h\u1ECFi 192: C\xE1c xe \u0111i theo h\u01B0\u1EDBng m\u0169i
       t\xEAn, xe n\xE0o vi ph\u1EA1m quy t\u1EAFc giao th\xF4ng?  "
@@ -1865,6 +2166,7 @@ MonoBehaviour:
     - "1. Xe t\u1EA3i, xe con. "
     - "2. Xe kh\xE1ch, xe con. "
     - "3. Xe kh\xE1ch, xe t\u1EA3i. "
+    - 
     correctAnswer: "3. Xe kh\xE1ch, xe t\u1EA3i. "
   - questImage: {fileID: -7946885449374464230, guid: e46ad8519c0712d448aa82baab00d37b, type: 3}
     question: "C\xE2u h\u1ECFi 193: C\xE1c xe \u0111i theo h\u01B0\u1EDBng m\u0169i
@@ -1891,6 +2193,7 @@ MonoBehaviour:
     - "2. Xe con, xe c\u1EE7a b\u1EA1n, m\xF4 t\xF4. "
     - "3. M\xF4 t\xF4, xe con, xe c\u1EE7a b\u1EA1n. "
     - "3. M\xF4 t\xF4, xe con, xe c\u1EE7a b\u1EA1n. "
+    - 
     correctAnswer: "3. M\xF4 t\xF4, xe con, xe c\u1EE7a b\u1EA1n. "
   - questImage: {fileID: 5001632299488286230, guid: dac145af8cc613246842f787035de342, type: 3}
     question: "C\xE2u h\u1ECFi 196: C\xE1c xe \u0111i theo th\u1EE9 t\u1EF1 n\xE0o
@@ -1899,6 +2202,7 @@ MonoBehaviour:
     - "1. Xe c\u1EE7a b\u1EA1n, m\xF4 t\xF4, xe con. "
     - "2. Xe con, xe c\u1EE7a b\u1EA1n, m\xF4 t\xF4. "
     - "3. M\xF4 t\xF4, xe con, xe c\u1EE7a b\u1EA1n. "
+    - 
     correctAnswer: "2. Xe con, xe c\u1EE7a b\u1EA1n, m\xF4 t\xF4. "
   - questImage: {fileID: -9003037566133130303, guid: ee1690a816102ea45a3ca45312ff0498, type: 3}
     question: "C\xE2u h\u1ECFi 197: B\u1EA1n x\u1EED l\xFD nh\u01B0 th\u1EBF n\xE0o
@@ -1909,6 +2213,7 @@ MonoBehaviour:
     - "2. Gi\u1EA3m t\u1ED1c \u0111\u1ED9, r\u1EBD ph\u1EA3i sau xe t\u1EA3i v\xE0
       xe \u0111\u1EA1p. "
     - "3. T\u0103ng t\u1ED1c \u0111\u1ED9, r\u1EBD ph\u1EA3i tr\u01B0\u1EDBc xe \u0111\u1EA1p. "
+    - 
     correctAnswer: "2. Gi\u1EA3m t\u1ED1c \u0111\u1ED9, r\u1EBD ph\u1EA3i sau xe
       t\u1EA3i v\xE0 xe \u0111\u1EA1p. "
   - questImage: {fileID: 421993404332526794, guid: 8d23b24a8c5982044a2db32af68592af, type: 3}
@@ -1918,6 +2223,7 @@ MonoBehaviour:
     - 1. Xe con.
     - "2. Xe m\xF4 t\xF4. "
     - "3. C\u1EA3 hai xe \u0111\u1EC1u \u0111\xFAng. "
+    - 
     correctAnswer: 1. Xe con.
   - questImage: {fileID: -3226953253450471850, guid: 9d2d689cf7c263d48a5a09b58d401b0d, type: 3}
     question: "C\xE2u h\u1ECFi 199: Xe c\u1EE7a b\u1EA1n \u0111ang di chuy\u1EC3n
@@ -1932,6 +2238,7 @@ MonoBehaviour:
       c\xE1ch an to\xE0n. "
     - "3. Ra t\xEDn hi\u1EC7u, y\xEAu c\u1EA7u ng\u01B0\u1EDDi g\xE1c ch\u1EAFn t\xE0u
       k\xE9o ch\u1EADm Barie \u0111\u1EC3 xe b\u1EA1n qua. "
+    - 
     correctAnswer: "2. D\u1EEBng l\u1EA1i tr\u01B0\u1EDBc r\xE0o ch\u1EAFn m\u1ED9t
       kho\u1EA3ng c\xE1ch an to\xE0n. "
   - questImage: {fileID: -6317415313901565193, guid: 1b08c667990fdd34f8dbb831833a8cdb, type: 3}
@@ -1944,5 +2251,6 @@ MonoBehaviour:
     - "2. Gi\u1EA3m t\u1ED1c \u0111\u1ED9 ch\u1EDD xe container r\u1EBD xong r\u1ED3i
       ti\u1EBFp t\u1EE5c \u0111i. "
     - "3. V\u01B0\u1EE3t v\u1EC1 ph\xEDa b\xEAn tr\xE1i \u0111\u1EC3 \u0111i ti\u1EBFp. "
+    - 
     correctAnswer: "2. Gi\u1EA3m t\u1ED1c \u0111\u1ED9 ch\u1EDD xe container r\u1EBD
       xong r\u1ED3i ti\u1EBFp t\u1EE5c \u0111i. "
