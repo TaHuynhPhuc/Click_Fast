@@ -664,6 +664,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -351
       objectReference: {fileID: 0}
+    - target: {fileID: 135913965647580043, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135913965647580043, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7414830730180813051, guid: 5ec99e2bceb02bf40a4c1be5e832843d, type: 3}
     - target: {fileID: 544235162761451734, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -772,6 +780,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 4053746861303037466, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053746861303037466, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7414830730180813051, guid: 5ec99e2bceb02bf40a4c1be5e832843d, type: 3}
     - target: {fileID: 4166552138397146996, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1000
@@ -784,6 +800,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -839
       objectReference: {fileID: 0}
+    - target: {fileID: 5861114957418110369, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861114957418110369, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7414830730180813051, guid: 5ec99e2bceb02bf40a4c1be5e832843d, type: 3}
     - target: {fileID: 6518892307335555965, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -76
@@ -800,6 +824,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -596
       objectReference: {fileID: 0}
+    - target: {fileID: 7380611933060679835, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380611933060679835, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7414830730180813051, guid: 5ec99e2bceb02bf40a4c1be5e832843d, type: 3}
     - target: {fileID: 7805480783188660558, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Name
       value: Quest UI
