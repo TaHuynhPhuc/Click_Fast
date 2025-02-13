@@ -19,7 +19,6 @@ public class QuestManager : MonoBehaviour
     public Sprite spriteNormal;
 
 
-    public int score;
     public Question currentQuestion;
     public List<Question> questions = new List<Question>();
 
@@ -37,6 +36,8 @@ public class QuestManager : MonoBehaviour
     public Image questionImage;
     public List<TextMeshProUGUI> answerList;
     public TextMeshProUGUI timeOutUI;
+
+    public GameObject oneChossePerTime;
 
     // public GameObject MenuLoss;
     /*  public TextMeshProUGUI answer1;
@@ -56,18 +57,8 @@ public class QuestManager : MonoBehaviour
              {
                 answerList[i].text = currentQuestion.answers[i];
              }
-             if(currentQuestion.answers.Length == 3)
-             {
-             answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = false;
-             answerList[3].GetComponent<TextMeshProUGUI>().enabled = false;
-             }
-                 else
-                {
-                     answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = true;
-                     answerList[3].GetComponent<TextMeshProUGUI>().enabled = true;
-                }
 
-        /*
+        
          for (int i = 0; i < currentQuestion.answers.Length; i++)
        {
            if (answerList[i].text == "" || answerList[i] == null)
@@ -82,13 +73,25 @@ public class QuestManager : MonoBehaviour
                answerList[i].GetComponent<TextMeshProUGUI>().enabled = true;
            }
        }
-         */
+      /* neu list null
+       *     if(currentQuestion.answers.Length == 3)
+             {
+             answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = false;
+             answerList[3].GetComponent<TextMeshProUGUI>().enabled = false;
+             }
+                 else
+                {
+                     answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = true;
+                     answerList[3].GetComponent<TextMeshProUGUI>().enabled = true;
+                }
+      */
     }
 
 
 
     private void Start()
     {
+        QuestController.Instance.score = 0;
         QuestController.Instance.passIndex.Clear();
         QuestController.Instance.selectAnswer.Clear();
         FindTextMPro();
@@ -140,7 +143,7 @@ public class QuestManager : MonoBehaviour
         {
             if (ScreenManager.Instance != null)
             {
-              //  Debug.Log("load lokback");
+                EndGameAddScore();
                ScreenManager.Instance.LoadLookBackScene();
             } else
             {
@@ -167,11 +170,8 @@ public class QuestManager : MonoBehaviour
         } 
         if(timeOut <= 0)
         {
-            //gameOver = true;
-            QuestController.Instance.passIndex.Clear();
-            QuestController.Instance.selectAnswer.Clear();
+            EndGameAddScore();
             ScreenManager.Instance.LoadEndScene();
-
         }
         if(timeOutUI == null)
         {
@@ -188,6 +188,7 @@ public class QuestManager : MonoBehaviour
         currentQuestion = GetRandomQuestion();
         if (currentQuestion != null)
         {
+            OnChossePerTime(false);
             UpdateQuestUI();
         }
     }
@@ -200,8 +201,22 @@ public class QuestManager : MonoBehaviour
         }
 
     }
+  //  bool isChosse;
+    public void OnChossePerTime( bool isChosse)
+    {
+        if (isChosse)
+        {
+            oneChossePerTime.SetActive(true);
+        } else
+        {
+            oneChossePerTime.SetActive(false);
+        }
+      
+    }
     public void OnAnswerSelected(int index)
     {
+       
+        OnChossePerTime(true);
         if (currentQuestion.correctAnswer == null) //gameOver || 
         {
             return;
@@ -211,7 +226,7 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-            score += 20;
+           QuestController.Instance.score += 10;
             //Debug.Log(index);
             answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
             StartCoroutine(delayShowAnswer());
@@ -219,22 +234,32 @@ public class QuestManager : MonoBehaviour
         } else
         {
             //    gameOver = true; 
+            EndGameAddScore();
             answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
-            Debug.Log("sai");
+            Debug.Log("sai"); 
             StartCoroutine(delayShowFailAnswer());
   
         } 
     }
 
+    public void EndGameAddScore()
+    {
+       if (QuestController.Instance.score > DatabaseManager.Instance.GetBestScore())
+        {
+            Debug.Log("Update Scoree");
+            DatabaseManager.Instance.UpdatePlayerScore(QuestController.Instance.score);
+        }
+    }
+
     public IEnumerator delayShowFailAnswer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         ScreenManager.Instance.LoadEndScene();
     }
 
     public  IEnumerator delayShowAnswer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         LoadNextQuestion();
     }
 

@@ -14,6 +14,8 @@ public class DatabaseManager : MonoBehaviour
     public TextMeshProUGUI textNotification;
 
     public List<PlayerData> playerData = new List<PlayerData>();
+    private string userName;
+    public int bestScore;
 
     private void Awake()
     {
@@ -29,14 +31,9 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        ShowTop30Players();
-    }
-
     public void Login()
     {
-        string userName = textTenDangNhap.text.Trim();
+        userName = textTenDangNhap.text.Trim();
         string password = textMatKhau.text.Trim();
         if (userName.Replace("\u200B", "") == "" || password.Replace("\u200B", "") == "")
         {
@@ -69,7 +66,7 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    public void ShowTop30Players()
+    public void LoadTop30Players()
     {
         firebaseClient.GetAllPlayers((players) =>
         {
@@ -87,6 +84,17 @@ public class DatabaseManager : MonoBehaviour
         });
     }
 
+    public int GetBestScore()
+    {
+        GetPlayerScore(userName);
+        return bestScore;
+    }
+
+    public void UpdatePlayerScore(int newScore)
+    {
+        firebaseClient.UpdatePlayerScore(userName, newScore);
+    }
+
     #region FirebaseFunciton
     private void SavePlayerData(string userName, string password, int score)
     {
@@ -96,11 +104,6 @@ public class DatabaseManager : MonoBehaviour
     private void GetPlayerScore(string userName)
     {
         firebaseClient.GetPlayerScore(userName);
-    }
-
-    private void UpdatePlayerScore(string userName, int newScore)
-    {
-        firebaseClient.UpdatePlayerScore(userName, newScore);
     }
     #endregion
 }

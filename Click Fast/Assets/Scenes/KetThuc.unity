@@ -386,6 +386,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109193508}
   m_CullTransparentMesh: 1
+--- !u!1 &477524111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477524113}
+  - component: {fileID: 477524112}
+  m_Layer: 0
+  m_Name: TraSuaPhucLong (Don't Delete)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &477524112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477524111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d115b16292b82e419fe785748c96b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textScore: {fileID: 751173189}
+  textBestScore: {fileID: 1353424526}
+--- !u!4 &477524113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477524111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 654.79803, y: 1194.0236, z: -10.590219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &499273181
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119, y: 795}
+  m_AnchoredPosition: {x: -119, y: 1003}
   m_SizeDelta: {x: 1621.7092, y: 167.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499273183
@@ -556,7 +602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 173}
+  m_AnchoredPosition: {x: 17, y: 241}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &751173189
@@ -906,7 +952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 116.08423}
+  m_AnchoredPosition: {x: -10, y: 234}
   m_SizeDelta: {x: 870.4183, y: 765.3345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934640562
@@ -981,7 +1027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: 5}
+  m_AnchoredPosition: {x: -19, y: 95}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143369099
@@ -1291,7 +1337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: 3}
+  m_AnchoredPosition: {x: 80, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1353424524
@@ -1622,8 +1668,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "K\u1EBFt th\xFAc"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d41b8e332d60b5742b48f8cd7714434c, type: 2}
-  m_sharedMaterial: {fileID: -239711495639613037, guid: d41b8e332d60b5742b48f8cd7714434c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9c777ce17d33d544ab0d105fea39042, type: 2}
+  m_sharedMaterial: {fileID: -6816379264869411985, guid: c9c777ce17d33d544ab0d105fea39042, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1733,7 +1779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 162.59998, y: -333}
+  m_AnchoredPosition: {x: 162.59998, y: -576}
   m_SizeDelta: {x: 525.21, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1729282018
@@ -1842,3 +1888,4 @@ SceneRoots:
   - {fileID: 1244198601}
   - {fileID: 32392619}
   - {fileID: 914681742}
+  - {fileID: 477524113}
