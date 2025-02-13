@@ -13,13 +13,13 @@ public class SettingsUIManager : MonoBehaviour
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
-        mainButtons.SetActive(false);
+        //mainButtons.SetActive(false);
     }
 
     public void CloseSettings() 
     {
         settingsPanel.SetActive(false);
-        mainButtons.SetActive(true);
+        //mainButtons.SetActive(true);
     }
 
     public void ToggleSettings()

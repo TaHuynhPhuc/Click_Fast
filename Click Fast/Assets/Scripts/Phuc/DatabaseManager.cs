@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class DatabaseManager : MonoBehaviour
 {
     public static DatabaseManager Instance { get; private set; }
-    private FirebaseRestClient firebaseClient;
+    public FirebaseRestClient firebaseClient;
 
     public TextMeshProUGUI textTenDangNhap;
     public TextMeshProUGUI textMatKhau;
