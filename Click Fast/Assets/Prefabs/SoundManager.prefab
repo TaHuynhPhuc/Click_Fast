@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 026c4ef6330cdba4d95c045c72ed9665, type: 3}
-  correctSound: {fileID: 8300000, guid: b043e7df995a5404cb6b68782014c87e, type: 3}
-  wrongSound: {fileID: 8300000, guid: 1ab3e28da7625d84eb79424f204b6f87, type: 3}
-  buttonClickSound: {fileID: 8300000, guid: 2c249e5e0ae41984c945baef1bb89699, type: 3}
+  correctSound: {fileID: 8300000, guid: d5bf1ffdcdba9984fbb3d3172a45d089, type: 3}
+  wrongSound: {fileID: 8300000, guid: c8ee92374f605154e87108c831d89db9, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 6521b198ff1acd2409b07f4b5d2435b4, type: 3}
 --- !u!82 &9128356487532594944
 AudioSource:
   m_ObjectHideFlags: 0
