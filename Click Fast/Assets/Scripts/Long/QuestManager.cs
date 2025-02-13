@@ -222,11 +222,13 @@ public class QuestManager : MonoBehaviour
             return;
         }
 
+        AudioManager.Instance.PlaySoundEffect("click");
         QuestController.Instance.selectAnswer.Add(chooseAswer(index)); 
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-           QuestController.Instance.score += 10;
+            AudioManager.Instance.PlaySoundEffect("correct");
+            QuestController.Instance.score += 10;
             //Debug.Log(index);
             answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
             StartCoroutine(delayShowAnswer());
@@ -236,7 +238,8 @@ public class QuestManager : MonoBehaviour
             //    gameOver = true; 
             EndGameAddScore();
             answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
-            Debug.Log("sai"); 
+            Debug.Log("sai");
+            AudioManager.Instance.PlaySoundEffect("wrong");
             StartCoroutine(delayShowFailAnswer());
   
         } 

@@ -33,6 +33,7 @@ public class DatabaseManager : MonoBehaviour
 
     public void Login()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         userName = textTenDangNhap.text.Trim();
         string password = textMatKhau.text.Trim();
         if (userName.Replace("\u200B", "") == "" || password.Replace("\u200B", "") == "")

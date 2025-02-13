@@ -1,28 +1,24 @@
 ﻿using UnityEngine;
-using UnityEngine.UI; // Import UI để dùng Slider
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance;
+    public static AudioManager Instance; // Singleton để gọi từ bất cứ đâu
 
     [Header("Audio Clips")]
     public AudioClip backgroundMusic;
+    public AudioClip clickSound;
     public AudioClip correctSound;
     public AudioClip wrongSound;
-    public AudioClip buttonClickSound;
 
-    private AudioSource musicSource;
-    private AudioSource sfxSource;
-
-    private float musicVolume = 1f;
-    private float sfxVolume = 1f;
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
@@ -33,7 +29,7 @@ public class AudioManager : MonoBehaviour
         musicSource = gameObject.AddComponent<AudioSource>();
         sfxSource = gameObject.AddComponent<AudioSource>();
 
-        musicSource.loop = true;
+        musicSource.loop = true; 
     }
 
     private void Start()
@@ -46,7 +42,7 @@ public class AudioManager : MonoBehaviour
         if (backgroundMusic != null)
         {
             musicSource.clip = backgroundMusic;
-            musicSource.volume = musicVolume; // Áp dụng volume
+            musicSource.volume = 1f; 
             musicSource.Play();
         }
     }
@@ -55,30 +51,30 @@ public class AudioManager : MonoBehaviour
     {
         switch (soundType)
         {
+            case "click":
+                sfxSource.PlayOneShot(clickSound);
+                break;
             case "correct":
-                sfxSource.PlayOneShot(correctSound, sfxVolume);
+                sfxSource.PlayOneShot(correctSound);
                 break;
             case "wrong":
-                sfxSource.PlayOneShot(wrongSound, sfxVolume);
-                break;
-            case "click":
-                sfxSource.PlayOneShot(buttonClickSound, sfxVolume);
+                sfxSource.PlayOneShot(wrongSound);
                 break;
             default:
-                Debug.LogWarning("Âm thanh không hợp lệ: " + soundType);
+                Debug.LogWarning("Không tìm thấy âm thanh: " + soundType);
                 break;
         }
     }
 
-    public void SetMusicVolume(float volume)
+    public void PlaySFX(AudioClip clip)
     {
-        musicVolume = volume;
-        musicSource.volume = musicVolume;
+        sfxSource.PlayOneShot(clip);
     }
 
-    public void SetSFXVolume(float volume)
+    public void PlayMusic(AudioClip clip)
     {
-        sfxVolume = volume;
+        musicSource.clip = clip;
+        musicSource.Play();
     }
 
     public void StopBackgroundMusic()
