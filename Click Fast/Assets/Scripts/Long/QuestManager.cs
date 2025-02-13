@@ -19,7 +19,6 @@ public class QuestManager : MonoBehaviour
     public Sprite spriteNormal;
 
 
-    public int score;
     public Question currentQuestion;
     public List<Question> questions = new List<Question>();
 
@@ -92,6 +91,7 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
+        QuestController.Instance.score = 0;
         QuestController.Instance.passIndex.Clear();
         QuestController.Instance.selectAnswer.Clear();
         FindTextMPro();
@@ -143,7 +143,7 @@ public class QuestManager : MonoBehaviour
         {
             if (ScreenManager.Instance != null)
             {
-              //  Debug.Log("load lokback");
+                EndGameAddScore();
                ScreenManager.Instance.LoadLookBackScene();
             } else
             {
@@ -170,11 +170,8 @@ public class QuestManager : MonoBehaviour
         } 
         if(timeOut <= 0)
         {
-            //gameOver = true;
-            QuestController.Instance.passIndex.Clear();
-            QuestController.Instance.selectAnswer.Clear();
+            EndGameAddScore();
             ScreenManager.Instance.LoadEndScene();
-
         }
         if(timeOutUI == null)
         {
@@ -229,7 +226,7 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-            score += 10;
+           QuestController.Instance.score += 10;
             //Debug.Log(index);
             answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
             StartCoroutine(delayShowAnswer());
@@ -237,6 +234,7 @@ public class QuestManager : MonoBehaviour
         } else
         {
             //    gameOver = true; 
+            EndGameAddScore();
             answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
             Debug.Log("sai"); 
             StartCoroutine(delayShowFailAnswer());
@@ -246,18 +244,22 @@ public class QuestManager : MonoBehaviour
 
     public void EndGameAddScore()
     {
-     // DatabaseManager.Instance.playerData.
+       if (QuestController.Instance.score > DatabaseManager.Instance.GetBestScore())
+        {
+            Debug.Log("Update Scoree");
+            DatabaseManager.Instance.UpdatePlayerScore(QuestController.Instance.score);
+        }
     }
 
     public IEnumerator delayShowFailAnswer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         ScreenManager.Instance.LoadEndScene();
     }
 
     public  IEnumerator delayShowAnswer()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         LoadNextQuestion();
     }
 

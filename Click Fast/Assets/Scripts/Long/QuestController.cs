@@ -5,7 +5,7 @@ public class QuestController : MonoBehaviour
 {
     public List<int> passIndex = new List<int>();
     public List<string> selectAnswer = new List<string>();
-
+    public int score;
     private static QuestController _instance;
 
     public static QuestController Instance

@@ -86,7 +86,7 @@ public class RankManager1 : MonoBehaviour
             }
 
             // Format đẹp hơn + tô màu cho điểm số
-            textComponent1.text = $"{i + 1}<";
+            textComponent1.text = $"{i + 1}";
             textComponent2.text = player.username;
             textComponent3.text = player.score.ToString();
             //    textComponent.fontSize = 38; // Tăng kích thước chữ
