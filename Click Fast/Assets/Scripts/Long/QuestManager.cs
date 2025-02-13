@@ -58,18 +58,8 @@ public class QuestManager : MonoBehaviour
              {
                 answerList[i].text = currentQuestion.answers[i];
              }
-             if(currentQuestion.answers.Length == 3)
-             {
-             answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = false;
-             answerList[3].GetComponent<TextMeshProUGUI>().enabled = false;
-             }
-                 else
-                {
-                     answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = true;
-                     answerList[3].GetComponent<TextMeshProUGUI>().enabled = true;
-                }
 
-        /*
+        
          for (int i = 0; i < currentQuestion.answers.Length; i++)
        {
            if (answerList[i].text == "" || answerList[i] == null)
@@ -84,7 +74,18 @@ public class QuestManager : MonoBehaviour
                answerList[i].GetComponent<TextMeshProUGUI>().enabled = true;
            }
        }
-         */
+      /* neu list null
+       *     if(currentQuestion.answers.Length == 3)
+             {
+             answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = false;
+             answerList[3].GetComponent<TextMeshProUGUI>().enabled = false;
+             }
+                 else
+                {
+                     answerList[3].transform.parent.gameObject.GetComponent<Image>().enabled = true;
+                     answerList[3].GetComponent<TextMeshProUGUI>().enabled = true;
+                }
+      */
     }
 
 
