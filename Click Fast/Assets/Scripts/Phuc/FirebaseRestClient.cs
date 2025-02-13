@@ -176,6 +176,7 @@ public class FirebaseRestClient : MonoBehaviour
         if (request.result == UnityWebRequest.Result.Success)
         {
             Debug.Log("Player score: " + request.downloadHandler.text);
+            DatabaseManager.Instance.bestScore = int.Parse(request.downloadHandler.text);
         }
         else
         {
