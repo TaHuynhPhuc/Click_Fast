@@ -44,47 +44,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd925dd58548c0438bd77fd39486903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataObject: {fileID: 1998035252930932175, guid: e15e519f4d054424a97ed8a7fb1f21b4, type: 3}
+  spriteCorrect: {fileID: -4736947021416864802, guid: d187f859512c0504bb42e76cff116f86, type: 3}
+  spriteIncorrect: {fileID: 7745392120392497536, guid: ed1810481d2ca0f4eab4c6a61b0d4202, type: 3}
+  spriteNormal: {fileID: -7414830730180813051, guid: 5ec99e2bceb02bf40a4c1be5e832843d, type: 3}
   score: 0
   currentQuestion:
+    questImage: {fileID: 0}
     question: 
     answers: []
     correctAnswer: 
   questions:
-  - question: 1+1 = ?
+  - questImage: {fileID: 8957324059118975939, guid: 6cdb0c3b5e3383a49a66d65590d6a8d7, type: 3}
+    question: 1+1 = ?
     answers:
     - 8
     - 9
     - 2
     - 
     correctAnswer: 2
-  - question: 1+2= ?
+  - questImage: {fileID: 0}
+    question: 1+2= ?
     answers:
     - 2
     - 3
     - 4
     - 5
     correctAnswer: 3
-  - question: 9+2= ?
+  - questImage: {fileID: 0}
+    question: 9+2= ?
     answers:
     - 2
     - 13
     - 11
     - 41
     correctAnswer: 11
-  - question: 9+14= ?
+  - questImage: {fileID: 0}
+    question: 9+14= ?
     answers:
     - 23
     - 24
     - 15
     - 19
     correctAnswer: 23
-  passIndex: 
-  selectIndex: 
-  timeOut: 60
+  timeOut: 300
   question: {fileID: 0}
+  questionImage: {fileID: 0}
   answerList:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   timeOutUI: {fileID: 0}
+  oneChossePerTime: {fileID: 0}
