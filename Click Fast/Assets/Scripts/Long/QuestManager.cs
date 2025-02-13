@@ -38,6 +38,8 @@ public class QuestManager : MonoBehaviour
     public List<TextMeshProUGUI> answerList;
     public TextMeshProUGUI timeOutUI;
 
+    public GameObject oneChossePerTime;
+
     // public GameObject MenuLoss;
     /*  public TextMeshProUGUI answer1;
       public TextMeshProUGUI answer2;
@@ -188,6 +190,7 @@ public class QuestManager : MonoBehaviour
         currentQuestion = GetRandomQuestion();
         if (currentQuestion != null)
         {
+            OnChossePerTime(false);
             UpdateQuestUI();
         }
     }
@@ -200,8 +203,22 @@ public class QuestManager : MonoBehaviour
         }
 
     }
+  //  bool isChosse;
+    public void OnChossePerTime( bool isChosse)
+    {
+        if (isChosse)
+        {
+            oneChossePerTime.SetActive(true);
+        } else
+        {
+            oneChossePerTime.SetActive(false);
+        }
+      
+    }
     public void OnAnswerSelected(int index)
     {
+       
+        OnChossePerTime(true);
         if (currentQuestion.correctAnswer == null) //gameOver || 
         {
             return;
@@ -211,7 +228,7 @@ public class QuestManager : MonoBehaviour
 
         if( currentQuestion.correctAnswer == chooseAswer(index))
         {
-            score += 20;
+            score += 10;
             //Debug.Log(index);
             answerList[index-1].transform.parent.GetComponent<Image>().sprite =  spriteCorrect;
             StartCoroutine(delayShowAnswer());
@@ -220,10 +237,15 @@ public class QuestManager : MonoBehaviour
         {
             //    gameOver = true; 
             answerList[index - 1].transform.parent.GetComponent<Image>().sprite = spriteIncorrect;
-            Debug.Log("sai");
+            Debug.Log("sai"); 
             StartCoroutine(delayShowFailAnswer());
   
         } 
+    }
+
+    public void EndGameAddScore()
+    {
+     // DatabaseManager.Instance.playerData.
     }
 
     public IEnumerator delayShowFailAnswer()
