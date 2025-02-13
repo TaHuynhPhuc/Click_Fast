@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI; // Import UI để dùng Slider
 
 public class AudioManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource musicSource;
     private AudioSource sfxSource;
+
+    private float musicVolume = 1f;
+    private float sfxVolume = 1f;
 
     private void Awake()
     {
@@ -32,11 +36,17 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = true;
     }
 
+    private void Start()
+    {
+        PlayBackgroundMusic();
+    }
+
     public void PlayBackgroundMusic()
     {
         if (backgroundMusic != null)
         {
             musicSource.clip = backgroundMusic;
+            musicSource.volume = musicVolume; // Áp dụng volume
             musicSource.Play();
         }
     }
@@ -46,18 +56,29 @@ public class AudioManager : MonoBehaviour
         switch (soundType)
         {
             case "correct":
-                sfxSource.PlayOneShot(correctSound);
+                sfxSource.PlayOneShot(correctSound, sfxVolume);
                 break;
             case "wrong":
-                sfxSource.PlayOneShot(wrongSound);
+                sfxSource.PlayOneShot(wrongSound, sfxVolume);
                 break;
             case "click":
-                sfxSource.PlayOneShot(buttonClickSound);
+                sfxSource.PlayOneShot(buttonClickSound, sfxVolume);
                 break;
             default:
                 Debug.LogWarning("Âm thanh không hợp lệ: " + soundType);
                 break;
         }
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicVolume = volume;
+        musicSource.volume = musicVolume;
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxVolume = volume;
     }
 
     public void StopBackgroundMusic()
