@@ -44,6 +44,7 @@ public class ReviewQuest : MonoBehaviour
 
     public void OnNextButton()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         Debug.Log(QuestController.Instance.selectAnswer.Count);
         index++;
         if (index > QuestController.Instance.selectAnswer.Count-1)
@@ -61,6 +62,7 @@ public class ReviewQuest : MonoBehaviour
 
     public void OnBeforeButton()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         index--;
         if (index < 0)
         {
@@ -76,7 +78,8 @@ public class ReviewQuest : MonoBehaviour
     }
     public void CheckingAnswer(string yourAnswer , int i)
     {
-       
+        AudioManager.Instance.PlaySoundEffect("click");
+
         if (yourAnswer == currentQuestion.correctAnswer)
         {
             Debug.Log("dung");
@@ -97,7 +100,8 @@ public class ReviewQuest : MonoBehaviour
     }
     public void ResetUIButton()
     {
-        foreach(TextMeshProUGUI answer in answerList)
+        AudioManager.Instance.PlaySoundEffect("click");
+        foreach (TextMeshProUGUI answer in answerList)
         {
             answer.transform.parent.GetComponent<Image>().sprite = spriteNormal;
         }
@@ -152,6 +156,7 @@ public class ReviewQuest : MonoBehaviour
 
     public void ButtonBackSceneEndGame()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         SceneManager.LoadScene("KetThuc");
     }
 }
