@@ -4,18 +4,18 @@ public class SceneManagers : MonoBehaviour
 {
     public void GoToGamePlay()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
     public void GoToLookBack()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         UnityEngine.SceneManagement.SceneManager.LoadScene("LookBackQuestion");
     }
 
     public void GoToBXH()
     {
-        //Load data mới nhất mỗi lần vào rank (Phúc Đẹp Trai)
-        DatabaseManager.Instance.playerData.Clear();
-        DatabaseManager.Instance.LoadTop30Players();
+        AudioManager.Instance.PlaySoundEffect("click");
         UnityEngine.SceneManagement.SceneManager.LoadScene("BXH");
     }
 }

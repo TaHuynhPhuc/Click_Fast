@@ -12,14 +12,16 @@ public class SettingsUIManager : MonoBehaviour
 
     public void OpenSettings()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         settingsPanel.SetActive(true);
-        mainButtons.SetActive(false);
+        //mainButtons.SetActive(false);
     }
 
     public void CloseSettings() 
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         settingsPanel.SetActive(false);
-        mainButtons.SetActive(true);
+        //mainButtons.SetActive(true);
     }
 
     public void ToggleSettings()

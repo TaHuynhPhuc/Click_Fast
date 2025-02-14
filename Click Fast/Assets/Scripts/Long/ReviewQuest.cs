@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -147,8 +148,10 @@ public class ReviewQuest : MonoBehaviour
                 //answerList[i].color = Color.red;
             }
         }
-      
-       
+    }
 
+    public void ButtonBackSceneEndGame()
+    {
+        SceneManager.LoadScene("KetThuc");
     }
 }

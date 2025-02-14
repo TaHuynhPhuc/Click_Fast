@@ -67,7 +67,7 @@ public class RankManager1 : MonoBehaviour
         }
 
         // Hiển thị danh sách mới
-        for (int i = 0; i < listPlayerRank.Count; i++)
+        /*for (int i = 0; i < listPlayerRank.Count; i++)
         {
             var player = listPlayerRank[i];  // Lấy người chơi thứ i trong danh sách
             GameObject newEntry = Instantiate(rankEntryPrefab, rankContainer);
@@ -94,6 +94,7 @@ public class RankManager1 : MonoBehaviour
 
 
 
+
             // Thêm khoảng cách giữa các hàng (dùng Layout Element)
             LayoutElement layout = newEntry.GetComponent<LayoutElement>();
             if (layout == null)
@@ -101,7 +102,54 @@ public class RankManager1 : MonoBehaviour
                 layout = newEntry.AddComponent<LayoutElement>();
             }
             layout.minHeight = 50; // Tăng chiều cao mỗi hàng
-        }
+        }*/
+
+        DatabaseManager.Instance.firebaseClient.GetAllPlayers((players) =>
+        {
+            var top30Players = players
+                .OrderByDescending(player => player.score)
+                .Take(30)
+                .ToList();
+
+            Debug.Log("===== Top 30 Players =====");
+            for (int i = 0; i < top30Players.Count; i++)
+            {
+                Debug.Log($"{i + 1}. Username: {top30Players[i].username}, Score: {top30Players[i].score}");
+                var player = top30Players[i];  // Lấy người chơi thứ i trong danh sách
+                GameObject newEntry = Instantiate(rankEntryPrefab, rankContainer);
+
+                TextMeshProUGUI textComponent1 = newEntry.transform.Find("STT").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI textComponent2 = newEntry.transform.Find("Name").GetComponent<TextMeshProUGUI>();
+                TextMeshProUGUI textComponent3 = newEntry.transform.Find("Score").GetComponent<TextMeshProUGUI>();
+
+                // Lấy component TextMeshProUGUI từ con của Prefab
+                // List<TextMeshProUGUI> textComponent = new List<TextMeshProUGUI>();
+
+                if (textComponent1 == null)
+                {
+                    Debug.LogError("⚠ rankEntryPrefab không có TextMeshProUGUI Component!");
+                    continue;
+                }
+
+                // Format đẹp hơn + tô màu cho điểm số
+                textComponent1.text = $"{i + 1}";
+                textComponent2.text = player.username;
+                textComponent3.text = player.score.ToString();
+                //    textComponent.fontSize = 38; // Tăng kích thước chữ
+                //    textComponent.alignment = TextAlignmentOptions.Center; // Căn giữa text
+
+
+
+
+                // Thêm khoảng cách giữa các hàng (dùng Layout Element)
+                LayoutElement layout = newEntry.GetComponent<LayoutElement>();
+                if (layout == null)
+                {
+                    layout = newEntry.AddComponent<LayoutElement>();
+                }
+                layout.minHeight = 50; // Tăng chiều cao mỗi hàng
+            }
+        });
 
         Debug.Log("✅ UI Cập nhật thành công!");
     }

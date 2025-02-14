@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class DatabaseManager : MonoBehaviour
 {
     public static DatabaseManager Instance { get; private set; }
-    private FirebaseRestClient firebaseClient;
+    public FirebaseRestClient firebaseClient;
 
     public TextMeshProUGUI textTenDangNhap;
     public TextMeshProUGUI textMatKhau;
@@ -33,6 +33,7 @@ public class DatabaseManager : MonoBehaviour
 
     public void Login()
     {
+        AudioManager.Instance.PlaySoundEffect("click");
         userName = textTenDangNhap.text.Trim();
         string password = textMatKhau.text.Trim();
         if (userName.Replace("\u200B", "") == "" || password.Replace("\u200B", "") == "")
