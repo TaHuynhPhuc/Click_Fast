@@ -2,7 +2,7 @@
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance; // Singleton để gọi từ bất cứ đâu
+    public static AudioManager Instance;
 
     [Header("Audio Clips")]
     public AudioClip backgroundMusic;
