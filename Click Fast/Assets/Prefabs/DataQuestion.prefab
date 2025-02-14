@@ -657,11 +657,10 @@ MonoBehaviour:
       v\xE0 ph\xEDa b\xEAn tr\xE1i ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n \u0111\u01B0\u1EE3c
       \u0111i t\u1EA5t c\u1EA3 c\xE1c h\u01B0\u1EDBng. "
   - questImage: {fileID: -2313333244150917818, guid: 0c7fe425d7fdef749a96687bd177d99d, type: 3}
-    question: "4. Ng\u01B0\u1EDDi tham gia giao th\xF4ng \u1EDF ph\xEDa tr\u01B0\u1EDBc
-      v\xE0 ph\xEDa sau ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n ph\u1EA3i d\u1EEBng
-      l\u1EA1i; ng\u01B0\u1EDDi tham gia giao th\xF4ng \u1EDF ph\xEDa b\xEAn ph\u1EA3i
-      v\xE0 ph\xEDa b\xEAn tr\xE1i ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n \u0111\u01B0\u1EE3c
-      \u0111i t\u1EA5t c\u1EA3 c\xE1c h\u01B0\u1EDBng. "
+    question: "C\xE2u h\u1ECFi 45: Khi g\u1EB7p hi\u1EC7u l\u1EC7nh nh\u01B0 d\u01B0\u1EDBi
+      \u0111\xE2y c\u1EE7a c\u1EA3nh s\xE1t giao th\xF4ng th\xEC ng\u01B0\u1EDDi
+      tham gia giao th\xF4ng ph\u1EA3i \u0111i nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng
+      quy t\u1EAFc giao th\xF4ng?  "
     answers:
     - "1. Ng\u01B0\u1EDDi tham gia giao th\xF4ng \u1EDF h\u01B0\u1EDBng \u0111\u1ED1i
       di\u1EC7n c\u1EA3nh s\xE1t giao th\xF4ng \u0111\u01B0\u1EE3c \u0111i, c\xE1c
@@ -1697,7 +1696,9 @@ MonoBehaviour:
     - 
     correctAnswer: "1. Bi\u1EC3n 1. "
   - questImage: {fileID: 5928294707581837657, guid: ad93d2892b04e7045b510cb83521e392, type: 3}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 111: Bi\u1EC3n n\xE0o xe \u0111\u01B0\u1EE3c ph\xE9p
+      quay \u0111\u1EA7u nh\u01B0ng kh\xF4ng \u0111\u01B0\u1EE3c r\u1EBD tr\xE1i
+      ?  "
     answers:
     - "1. Bi\u1EC3n 1. "
     - "2. Bi\u1EC3n 2. "
@@ -2417,7 +2418,7 @@ MonoBehaviour:
     - "3. H\u01B0\u1EDBng 1 v\xE0 3. "
     - "4. H\u01B0\u1EDBng 2 v\xE0 3. "
     correctAnswer: "3. H\u01B0\u1EDBng 1 v\xE0 3. "
-  - questImage: {fileID: 0}
+  - questImage: {fileID: -4984898825063012658, guid: 9fd2614985478f54bacc5d090a53eba7, type: 3}
     question: "C\xE2u h\u1ECFi 186: Trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y, th\u1EE9
       t\u1EF1 xe \u0111i nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc
       giao th\xF4ng?  "
