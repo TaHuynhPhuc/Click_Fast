@@ -1,79 +1,41 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements.Experimental;
-using Unity.VisualScripting;
 
 public class VolumeController : MonoBehaviour
 {
-    /*public Slider volumeSlider;
-    public AudioMixer audioMixer;
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        if (PlayerPrefs.HasKey("Volume"))
-        {
-            float saveVolume = PlayerPrefs.GetFloat("Volume");
-            volumeSlider.value = saveVolume;
-            audioMixer.SetFloat("MasterVolume", Mathf.Log10(saveVolume) * 20);
-        }
-        else
-        {
-            volumeSlider.value = 0f;
-            SetVolume(0f);
-        }
-
-        volumeSlider.onValueChanged.AddListener(SetVolume);
-    }
-
-    public void SetVolume(float volume)
-    {
-        audioMixer.SetFloat("MasterVolume", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("Volume", volume);
-    }*/
-
-    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private AudioMixer audioMixer; // Gán AudioMixer vào đây
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
-        
-        
+
     private void Start()
     {
-        if (PlayerPrefs.HasKey("musicVolume"))
-        {
-            LoadVolume();
-        }
-        else
-        {
-            SetMusicVolume();
-            SetSFXVolume();
-        }
+        // Load giá trị đã lưu trước đó (nếu có)
+        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 1f);
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 1f);
+
+        // Gán sự kiện thay đổi giá trị cho Slider
+        musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+
+        // Thiết lập âm lượng ban đầu
+        SetMusicVolume(musicSlider.value);
+        SetSFXVolume(sfxSlider.value);
     }
 
-
-    public void SetMusicVolume()
+    public void SetMusicVolume(float volume)
     {
-        float volume = musicSlider.value;
-        audioMixer.SetFloat("music", Mathf.Log10(volume) * 20);
+        volume = Mathf.Clamp(volume, 0.0001f, 1f); // Tránh log10(0)
+        float dB = Mathf.Log10(volume) * 20;
+        audioMixer.SetFloat("music", dB);
         PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
-    public void SetSFXVolume()
+    public void SetSFXVolume(float volume)
     {
-        float volume = sfxSlider.value;
-        audioMixer.SetFloat("sfx", Mathf.Log10(volume) * 20);
+        volume = Mathf.Clamp(volume, 0.0001f, 1f);
+        float dB = Mathf.Log10(volume) * 20;
+        audioMixer.SetFloat("sfx", dB);
         PlayerPrefs.SetFloat("sfxVolume", volume);
-    }
-
-
-    private void LoadVolume()
-    {
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume");
-        SetMusicVolume();
-        SetSFXVolume();
     }
 }
