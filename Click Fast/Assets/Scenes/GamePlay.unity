@@ -818,7 +818,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4830461100940536684, guid: 0eec7a226b0314f4284fa4b589cf3440, type: 3}
       propertyPath: timeOut
-      value: 30
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4830461100940536684, guid: 0eec7a226b0314f4284fa4b589cf3440, type: 3}
       propertyPath: timeOutUI
