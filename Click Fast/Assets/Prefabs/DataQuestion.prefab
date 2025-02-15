@@ -188,7 +188,7 @@ MonoBehaviour:
       ng\u01B0\u1EDDi \u0111i b\u1ED9 tr\xEAn \u0111\u01B0\u1EDDng b\u1ED9. "
     - "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
     - 
-    correctAnswer: 3
+    correctAnswer: "3. C\u1EA3 \xFD 1 v\xE0 \xFD 2."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 11: \u201CNg\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n
       ph\u01B0\u01A1ng ti\u1EC7n tham gia giao th\xF4ng \u0111\u01B0\u1EDDng b\u1ED9\u201D
@@ -404,7 +404,7 @@ MonoBehaviour:
     - "3. \u0110\u01B0\u1EE3c ph\xE9p v\u01B0\u1EE3t khi \u0111i qua n\u01A1i giao
       nhau c\xF3 \xEDt ph\u01B0\u01A1ng ti\u1EC7n c\xF9ng tham gia giao th\xF4ng. "
     - "4. \u0110\u01B0\u1EE3c v\u01B0\u1EE3t khi \u0111\u1EA3m b\u1EA3o an to\xE0n. "
-    correctAnswer: "1. Kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t."
+    correctAnswer: "1. Kh\xF4ng \u0111\u01B0\u1EE3c v\u01B0\u1EE3t. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 26: Ng\u01B0\u1EDDi \u0111i\u1EC1u khi\u1EC3n xe m\xF4
       t\xF4 hai b\xE1nh, ba b\xE1nh, xe g\u1EAFn m\xE1y c\xF3 \u0111\u01B0\u1EE3c
@@ -427,7 +427,9 @@ MonoBehaviour:
       \u0111\u01B0\u1EE3c ph\xE9p hay kh\xF4ng?  "
     answers:
     - "1. \u0110\u01B0\u1EE3c ph\xE9p"
-    - "2. T\xF9y tr\u01B0\u1EDDng h\u1EE3p"
+    - "2. Quan s\xE1t g\u01B0\u01A1ng, gi\u1EA3m t\u1ED1c \u0111\u1ED9, ra t\xEDn
+      hi\u1EC7u chuy\u1EC3n h\u01B0\u1EDBng, quan s\xE1t an to\xE0n v\xE0 chuy\u1EC3n
+      h\u01B0\u1EDBng. "
     - "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
     - 
     correctAnswer: "3. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
@@ -1189,12 +1191,12 @@ MonoBehaviour:
       \u0111\u01B0\u1EDDng b\u1ED9 v\xE0 \u0111\u01B0\u1EDDng s\u1EAFt khi c\xF3
       b\xE1o hi\u1EC7u d\u1EEBng n\xE0o d\u01B0\u1EDBi \u0111\xE2y?  "
     answers:
-    - "1. Hi\u1EC7u l\u1EC7nh c\u1EE7a nh\xE2n vi\xEAn g\xE1c ch\u1EAFn. "
+    - "1. T\u0103ng ga th\u1EADt nhanh, gi\u1EA3m ga t\u1EEB t\u1EEB. "
     - "2. \u0110\xE8n \u0111\u1ECF s\xE1ng nh\xE1y, c\u1EDD \u0111\u1ECF, bi\u1EC3n
       \u0111\u1ECF. "
     - "3. C\xF2i, chu\xF4ng k\xEAu, ch\u1EAFn \u0111\xE3 \u0111\xF3ng. "
     - "4. T\u1EA5t c\u1EA3 c\xE1c \xFD tr\xEAn. "
-    correctAnswer: "C\xF3"
+    correctAnswer: "4. T\u1EA5t c\u1EA3 c\xE1c \xFD tr\xEAn. "
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 76: T\xE1c d\u1EE5ng c\u1EE7a m\u0169 b\u1EA3o hi\u1EC3m
       \u0111\u1ED1i v\u1EDBi ng\u01B0\u1EDDi ng\u1ED3i tr\xEAn xe m\xF4 t\xF4 hai
@@ -1694,7 +1696,9 @@ MonoBehaviour:
     - 
     correctAnswer: "1. Bi\u1EC3n 1. "
   - questImage: {fileID: 5928294707581837657, guid: ad93d2892b04e7045b510cb83521e392, type: 3}
-    question: "T\u1EA1 Hu\u1EF3nh Ph\xFAc c\xF3 \u0111\u1EB9p trai kh\xF4ng?"
+    question: "C\xE2u h\u1ECFi 111: Bi\u1EC3n n\xE0o xe \u0111\u01B0\u1EE3c ph\xE9p
+      quay \u0111\u1EA7u nh\u01B0ng kh\xF4ng \u0111\u01B0\u1EE3c r\u1EBD tr\xE1i
+      ?  "
     answers:
     - "1. Bi\u1EC3n 1. "
     - "2. Bi\u1EC3n 2. "
@@ -1778,7 +1782,7 @@ MonoBehaviour:
     - "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
     - 
     - 
-    correctAnswer: "C\xF3"
+    correctAnswer: "2. Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p. "
   - questImage: {fileID: -5833542067405163022, guid: 9319f9f18131f6341afd018fd08b7912, type: 3}
     question: "C\xE2u h\u1ECFi 120: Bi\u1EC3n n\xE0o xe m\xF4 t\xF4 hai b\xE1nh \u0111\u01B0\u1EE3c
       \u0111i v\xE0o?  "
@@ -2270,7 +2274,7 @@ MonoBehaviour:
       \u0111\u01B0\u1EE3c ph\xE9p \u0111i?  "
     answers:
     - "1. Xe con v\xE0 xe kh\xE1ch. "
-    - "2. M\xF4 t\xF4. "
+    - "2. Xe kh\xE1ch, m\xF4 t\xF4. "
     - 
     - 
     correctAnswer: "1. Xe con v\xE0 xe kh\xE1ch. "
@@ -2300,7 +2304,7 @@ MonoBehaviour:
     - "2. Xe con v\xE0 m\xF4 t\xF4. "
     - "3. C\u1EA3 ba xe. "
     - "4. Xe con v\xE0 xe t\u1EA3i. "
-    correctAnswer: "1. Xe t\u1EA3i"
+    correctAnswer: "1. Xe t\u1EA3i. "
   - questImage: {fileID: -3097657671265015150, guid: e0d6397c9fd14b843b55cf4009e8fa9d, type: 3}
     question: "C\xE2u h\u1ECFi 174: Theo h\u01B0\u1EDBng m\u0169i t\xEAn, nh\u1EEFng
       h\u01B0\u1EDBng n\xE0o xe g\u1EAFn m\xE1y \u0111i \u0111\u01B0\u1EE3c?  "
@@ -2414,7 +2418,7 @@ MonoBehaviour:
     - "3. H\u01B0\u1EDBng 1 v\xE0 3. "
     - "4. H\u01B0\u1EDBng 2 v\xE0 3. "
     correctAnswer: "3. H\u01B0\u1EDBng 1 v\xE0 3. "
-  - questImage: {fileID: 0}
+  - questImage: {fileID: -4984898825063012658, guid: 9fd2614985478f54bacc5d090a53eba7, type: 3}
     question: "C\xE2u h\u1ECFi 186: Trong tr\u01B0\u1EDDng h\u1EE3p n\xE0y, th\u1EE9
       t\u1EF1 xe \u0111i nh\u01B0 th\u1EBF n\xE0o l\xE0 \u0111\xFAng quy t\u1EAFc
       giao th\xF4ng?  "

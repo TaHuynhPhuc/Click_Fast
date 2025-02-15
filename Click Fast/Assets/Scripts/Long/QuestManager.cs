@@ -2,7 +2,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.Universal;

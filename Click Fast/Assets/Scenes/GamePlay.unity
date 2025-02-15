@@ -719,74 +719,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2696776450064200655, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2696776450064200655, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -598079589810993777, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2696776450064200655, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2713200637761947545, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2713200637761947545, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -598079589810993777, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2713200637761947545, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2795528669521818146, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 705034388}
-    - target: {fileID: 2948823570296014028, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2948823570296014028, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -598079589810993777, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 2948823570296014028, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3033939496596930311, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 3033939496596930311, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -598079589810993777, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 3033939496596930311, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5124222928992341846, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 795630705}
-    - target: {fileID: 5995668060230725210, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 5995668060230725210, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -598079589810993777, guid: 3391994fcd06b25468157f18e272b0b4, type: 2}
-    - target: {fileID: 5995668060230725210, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6397302890592636017, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -803,6 +743,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quest UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7883252432368831474, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883252432368831474, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -818,7 +766,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4830461100940536684, guid: 0eec7a226b0314f4284fa4b589cf3440, type: 3}
       propertyPath: timeOut
-      value: 30
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4830461100940536684, guid: 0eec7a226b0314f4284fa4b589cf3440, type: 3}
       propertyPath: timeOutUI
