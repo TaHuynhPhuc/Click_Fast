@@ -821,11 +821,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568694751}
   m_CullTransparentMesh: 1
---- !u!82 &614661924 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4880595524169706196, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-  m_PrefabInstance: {fileID: 8525423962804168766}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &704794459
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,11 +873,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
---- !u!82 &755727852 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1762625823452520682, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-  m_PrefabInstance: {fileID: 8525423962804168766}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &842290732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,33 +2327,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1762625823452520682, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2792864176136272198, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: sfxSource
-      value: 
-      objectReference: {fileID: 755727852}
-    - target: {fileID: 2792864176136272198, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: audioMixer
-      value: 
-      objectReference: {fileID: 24100000, guid: 8e1b83f17b9a08d46898cba6de4971dd, type: 2}
-    - target: {fileID: 2792864176136272198, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: musicSource
-      value: 
-      objectReference: {fileID: 614661924}
-    - target: {fileID: 2792864176136272198, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: backgroundMusic
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4282650239846854275, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
       propertyPath: m_Name
       value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880595524169706196, guid: c65143e343b1f4146bc4d34a78ace00d, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
