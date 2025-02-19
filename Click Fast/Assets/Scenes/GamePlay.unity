@@ -723,6 +723,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 705034388}
+    - target: {fileID: 4166552138397146996, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -944
+      objectReference: {fileID: 0}
     - target: {fileID: 5124222928992341846, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Camera
       value: 
@@ -742,14 +746,6 @@ PrefabInstance:
     - target: {fileID: 7805480783188660558, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
       propertyPath: m_Name
       value: Quest UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883252432368831474, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 7883252432368831474, guid: d3620201f3811c14399ff10959c7eb7e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
