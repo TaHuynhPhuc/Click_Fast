@@ -322,7 +322,7 @@ MonoBehaviour:
     - "2. Kh\xF4ng b\u1ECB nghi\xEAm c\u1EA5m."
     - "3. B\u1ECB nghi\xEAm c\u1EA5m."
     - 
-    correctAnswer: "1. B\u1ECB nghi\xEAm c\u1EA5m t\xF9y tr\u01B0\u1EDDng h\u1EE3p."
+    correctAnswer: "3. B\u1ECB nghi\xEAm c\u1EA5m."
   - questImage: {fileID: 0}
     question: "C\xE2u h\u1ECFi 20: Khi l\xE1i xe trong khu \u0111\xF4 th\u1ECB v\xE0
       \u0111\xF4ng d\xE2n c\u01B0 tr\u1EEB c\xE1c khu v\u1EF1c c\xF3 bi\u1EC3n c\u1EA5m
